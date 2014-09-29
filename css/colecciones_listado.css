@@ -1,0 +1,46 @@
+#contenedor_busca {
+	float:left;
+}
+
+#busca_texto {
+	float:left;
+	width:34%;
+}
+
+#busca_editorial {
+	float:left;
+	width:33%;
+}
+
+#busca_tipo {
+	float:left;
+	width:33%;	
+}
+
+#busca_boton {
+	float:left;
+	clear:left;
+}
+
+#lista_colecciones, #lista_total, #lista_tags{
+	border:none;  
+	border-collapse:collapse; 
+	font-family:corbel,'helvetica neue','trebuchet ms',arial,helvetica,sans-serif; 
+	font-size:1em; line-height:1.5em
+	
+}
+
+#lista_colecciones{
+	float:left;
+	clear:left;
+
+}
+
+#lista_total{
+	float:left;
+	clear:left;
+}
+#lista_tags{
+	float:none;
+	clear:both;
+}

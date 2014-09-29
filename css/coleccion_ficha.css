@@ -1,0 +1,101 @@
+div.titulo {
+	margin-left:0em;
+	margin-right:1em;			
+	font-size:small;
+	color:#999;
+	size:50%;
+}
+div.valor {
+	margin-left:0em;	
+	margin-right:1em;		
+	text-align:right;	
+	size:50%;	
+	float:left
+}
+
+#col_desc {
+	font-size:smaller;
+	margin-left:1em;
+}
+
+#url {
+	float:left;	
+}
+
+#unov {
+	float:left;
+}
+#dosv {
+	float:left;
+}
+#tresv {
+	float:rigth;
+}
+
+
+#contenedor_lista {
+	float:left;
+	width:100%;
+}
+
+#hnick,#hpos,#hneg,#hfal,#hrep,#hmod,#hnot,
+#nick, #pos, #neg, #fal, #rep, #mod ,#not,#ver{
+	font-family:corbel,'helvetica neue','trebuchet ms',arial,helvetica,sans-serif; 
+	font-size:1em; line-height:1.5em;
+}
+
+#hnick,#hpos,#hneg,#hfal,#hrep,#hmod {
+	background-color:#darkgreen;
+	color:gray;
+}
+
+#nick,#hnick {
+	float:left;
+	clear:both;
+	width:10em;	
+}
+#pos,#hpos {
+	float:left;
+	width:3em;	
+	text-align:right;
+}
+#neg,#hneg	
+{
+	float:left;
+	width:3em;		
+	text-align:right;	
+}
+#fal,#hfal
+{
+	margin-left: 1em;
+	float:left;
+	width:3em;		
+	text-align:right;	
+}
+#rep,#hrep
+{
+	margin-left: 1em;	
+	float:left;
+	width:3em;		
+	text-align:right;	
+}
+#mod,#hmod
+{
+	margin-left: 1em;	
+	float:left;
+	width:5em;		
+}
+#ver
+{
+	margin-left: 1em;	
+	float:left;
+	width:2em;		
+}
+
+#not,#hnot
+{
+	float:left;
+//	width:30em;			
+	width:auto;			
+	font-size:smaller;
+}

@@ -1,0 +1,144 @@
+
+
+#derechalogo {
+width: 200px;
+height: 100px;
+}
+
+#botonera {
+margin-top: 0px;
+
+}
+
+.boton_menu {
+width: 150px;
+height: 35px;
+float:left;
+
+margin:-0px;
+position: inherit;
+bottom: 0;
+right: 0;
+}
+
+/* NARANJA */
+#menu_colecciones {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat 0px 0;
+}
+
+#menu_ayuda {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -154px 0;
+}
+
+#menu_comic {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -308px 0;
+}
+
+#menu_contacto {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -462px 0;
+}
+
+#menu_noticias {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -616px 0;
+}
+
+#menu_ranking {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -770px 0;
+}
+
+/* VERDE */
+#menu_evaluaciones {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -924px 0;
+}
+
+#menu_mensajes {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -1078px 0;
+}
+
+#menu_mis_datos {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -1232px 0;
+}
+
+#menu_mis_listas {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -1386px 0;
+}
+
+#menu_salir {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -1540px 0;
+}
+
+#menu_login {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -1694px 0;
+}
+
+#menu_registro {
+background: transparent url('http://www.cromosrepes.com/img/icon/botones.png') no-repeat -1848px 0;
+}
+
+/* naranja */
+#menu_colecciones:hover {
+background-position: 0px -36px;
+}
+#menu_ayuda:hover {
+background-position:-154px -36px;
+}
+#menu_comic:hover {
+background-position:-308px -36px;
+}
+#menu_contacto:hover {
+background-position:-462px -36px;
+}
+#menu_noticias:hover {
+background-position:-616px -36px;
+}
+#menu_ranking:hover {
+background-position:-770px -36px;
+}
+/* VERDE */
+#menu_evaluaciones:hover {
+background-position:-924px -36px;
+}
+
+#menu_mensajes:hover {
+background-position:-1078px -36px;
+}
+
+#menu_mis_datos:hover {
+background-position:-1232px -36px;
+}
+
+#menu_mis_listas:hover {
+background-position:-1386px -36px;
+}
+
+#menu_salir:hover {
+background-position:-1540px -36px;
+}
+
+#menu_login:hover {
+background-position:-1694px -36px;
+}
+
+#menu_registro:hover {
+background-position:-1848px -36px;
+}
+
+
+
+
+.click {
+width: 100%;
+height: 100%;
+}
+
+:focus {
+outline: 0;
+}
+
+#box {
+margin: 0px auto;
+}
+
+.clear {
+clear: both;
+}

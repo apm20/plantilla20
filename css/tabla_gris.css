@@ -1,0 +1,44 @@
+@charset "utf-8";
+table,th,td	{ border:none;  border-collapse:collapse; 
+			font-size:1.1em; line-height:1.5em}
+table		{	background:#DF9B44; -webkit-border-radius:3px; -moz-border-radius:3px; _border-radius:3px;
+	
+}
+				
+caption		{	text-align:left; text-transform:uppercase; font-size:150%; font-weight:bold; padding:1.5em 0; color:black}
+
+thead, 
+tfoot			{	color:black;  }
+
+thead th				{	padding:0.5em 1em; text-transform:capitalize; text-align:left; }
+/* thead th:first-child	{	width:10em; text-align:right; } */
+
+tbody td,
+tbody th				{	font-size:100%; padding:0.5em 0.5em; background-color:#eee; vertical-align:middle}
+tbody th				{	color:#222;	text-align:right; background-image:url(tabel.png); 
+							background-repeat:repeat-y; border-right:1px solid #ccc}
+tbody tr.odd th, 
+tbody tr.odd td			{	background-color:#eee; color:#222}
+tbody tr.even td		{	background-color:#FC3; color:#222}
+
+tfoot td,
+tfoot th				{	border:none; padding:0.5em 1em 2em; font-size:100%}
+tfoot th				{	text-align:right}
+
+table.lista a:visited	{	line-height:1em; color:#000; display:inline-block; padding:3px 7px; margin:-3px -7px}
+table.lista a			{	line-height:1em; color:#000; display:inline-block; padding:3px 7px; margin:-3px -7px}
+/*table.lista a:visited	{	color:#black} */
+table.lista a:hover	{		text-decoration:blink; background:#DF9B44; color:#FFF; 
+							-webkit-border-radius:4px; -moz-border-radius:4px; _border-radius:6px; }
+
+/* ::-moz-selection{	background:#202020; color:white} */
+/* ::_selection		{	background:#202020; color:white} */
+
+thead ::-moz-selection, 
+tfoot ::-moz-selection	{	background:white; color:#202020}
+/*
+thead ::_selection, 
+tfoot ::_selection		{	background:white; color:#202020}
+*/
+
+blockquote {color:blue;}

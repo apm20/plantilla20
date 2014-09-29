@@ -1,0 +1,216 @@
+@charset "utf-8";
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	margin: 0; /* es recomendable ajustar a cero el margen y el relleno del elemento body para lograr la compatibilidad con la configuración predeterminada de los diversos navegadores */
+	padding: 0;
+	text-align: center; /* esto centra el contenedor en los navegadores IE 5*. El texto se ajusta posteriormente con el valor predeterminado de alineación a la izquierda en el selector #container */
+	color: #000000;
+}
+
+/* Sugerencias para este diseño híbrido
+1. Dado que la asignación de tamaño basado en ems de las columnas laterales depende del tamaño de fuente predeterminado del usuario, es conveniente asegurarse de que los gráficos del fondo de las columnas lo tengan en cuenta. Si se crea correctamente, esto resulta más accesible para aquellas personas que necesitan tamaños de fuente más grandes, dado que el ancho de las columnas mantiene la proporcionalidad. Si no desea que ocurra esto en su diseño, simplemente cambie el ancho a un tamaño en píxeles y asegúrese de que cambia los márgenes del div #contenido de la misma forma.
+2. Dado que la asignación de tamaño de las columnas laterales de este diseño se basa en el 100% del tamaño de fuente del elemento body, si reduce el tamaño del texto globalmente empleando un font-size: 80% en el elemento body o el #container, recuerde que los anchos de columna se reducirán de forma proporcional. Es posible que le interese aumentar los anchos y el tamaño de los márgenes laterales del div #contenido para compensar esta circunstancia.
+3. Si la asignación de tamaño de fuente se modifica de forma distinta en cada div en lugar de hacerse en el diseño global (es decir: a #izda se le asigna un 70% de tamaño de fuente y a #contenido se le asigna un 85% de tamaño de fuente), ello hará que se modifique proporcionalmente el tamaño global de cada uno de los divs. Si lo desea, puede realizar el ajuste basándose en la asignación de tamaño de fuente final.
+4. El div #container no es necesario para este diseño con un ancho del 100%. Si lo desea, puede utilizarlo para crear columnas faux o limitar el ancho del diseño.
+5. No es necesario contar con un ancho del 100% en el div #container, ya que, por naturaleza, un div ocupa el 100% del espacio disponible. Se proporciona por si desea reducir el tamaño del contenedor global (quizá dejando un poco de margen a cada lado), de forma que ya esté disponible para su ajuste.
+*/
+.thrColHybHdr #container { 
+	width: 100%;
+	background: #FFFFFF;
+	/*margin: 0 auto;  los márgenes automáticos (conjuntamente con un ancho) centran la página si es necesario */
+	text-align: left; /* esto anula text-align: center en el elemento body. */
+}  
+.thrColHybHdr #cabecera { 
+	margin: 0;
+	background: #FFFFFF; 
+/*	padding: 0 10px;*/  /* este relleno coincide con la alineación izquierda de los elementos de los divs que aparecen bajo él. Si se utiliza una imagen en el #cabecera en lugar de texto, es posible que le interese quitar el relleno. */
+} 
+.thrColHybHdr #cabecera h1 {
+	margin: 0; /* el ajuste en cero del margen del último elemento del div de #cabecera evita la contracción del margen (un espacio inexplicable entre divs). Si el div tiene un borde alrededor, esto no es necesario, ya que también evita la contracción del margen */
+	padding: 10px 0; /* el uso de relleno en lugar de margen le permitirá mantener el elemento alejado de los bordes del div */
+}
+
+.thrColHybHdr #cabecera  a:link, #cabecera a:visited {
+	text-decoration:none; color:#03C;
+}
+.thrColHybHdr #izda      a:link, #izda a:visited {
+	text-decoration:none; color:blue;
+}
+.thrColHybHdr #cabecera img {
+	border:none;
+}
+.thrColHybHdr #contenido a:link, #contenido a:visited {
+	text-decoration:none; 
+	color: #03F; 
+}
+
+.thrColHybHdr #contenido a:hover {
+    text-decoration: underline;
+}
+.thrColHybHdr #cabecera a:hover {
+    text-decoration: underline;
+}
+.thrColHybHdr  #izda a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Sugerencias para izda:
+1. Tenga en cuenta que, si establece un valor de tamaño de fuente en este div, el ancho global del div se ajustará en función de éste.
+2. Dado que está trabajando en ems, es conveniente no utilizar relleno en la barra lateral propiamente dicha. Se añadirá al ancho en el caso de navegadores que cumplen los estándares, creando un ancho real desconocido. 
+3. El espacio entre el lado del div y los elementos que contiene puede crearse colocando un margen izquierdo y derecho en dichos elementos, como se observa en la regla ".thrColHybHdr #izda p".
+*/
+.thrColHybHdr #izda {
+	float: left; 
+	width: 10em; /* dado que este elemento es flotante, debe asignarse un ancho */
+	background: #FFFFFF; /* el color de fondo se mostrará a lo largo de todo el contenido de la columna, pero no más allá */
+	padding: 15px 0; /* el relleno superior e inferior crea un espacio visual dentro de este div */
+}
+.thrColHybHdr #izda h3, .thrColHybHdr #izda p {
+	margin-left: 10px; /* deben asignarse los márgenes izquierdo y derecho de cada elemento que vaya a colocarse en las columnas laterales */
+	margin-right: 1px;
+}
+
+/* Sugerencias para contenido:
+1. Si asigna a este div #contenido un valor de tamaño de fuente distinto del que tiene el div #izda, los márgenes del div #contenido se basarán en su tamaño de fuente y el ancho del div #izda se basará en su tamaño de fuente. Puede que le interese ajustar los valores de estos divs.
+2. El espacio entre el contenido y izda se crea con el margen izquierdo del div contenido.  Con independencia de la cantidad de contenido que incluya el div izda, permanecerá el espacio de la columna. Puede quitar el margen izquierdo si desea que el texto del div #contenido llene el espacio de #izda cuando termine el contenido de #izda.
+3. Para evitar la caída de un elemento flotante, puede que tenga que realizar pruebas con el fin de determinar el tamaño máximo aproximado de la imagen/el elemento, ya que este diseño se basa en el tamaño de fuente del usuario combinado con los valores que usted establezca. Sin embargo, si el usuario tiene configurado un tamaño de fuente inferior al normal, habrá menos espacio disponible en el div #contenido del que observará al realizar la prueba.
+4. En el siguiente comentario condicional de Internet Explorer, la propiedad zoom se utiliza para asignar a contenido "hasLayout." Esto evita que se produzcan diversos problemas específicos de IE.
+*/
+.thrColHybHdr #contenido {
+ 	margin: 0 1em 0 10em; /* el margen derecho puede asignarse en ems o píxeles. Éste crea el espacio a lo largo de la parte derecha de la página. */ 
+	padding: 0 1em 0 1em; /* el relleno crea aquí espacio en blanco "dentro del cuadro". */
+	text-align:left;
+} 
+.thrColHybHdr #pie { 
+	padding: 0 10px; /* este relleno coincide con la alineación izquierda de los elementos de los divs que aparecen por encima de él. */
+	background:#DDDDDD;
+	text-align:left;
+} 
+.thrColHybHdr #pie p {
+	margin: 0; /* el ajuste en cero de los márgenes del primer elemento del pie evitará que puedan contraerse los márgenes (un espacio entre divs) */
+	padding: 10px 0; /* el relleno de este elemento creará espacio, de la misma forma que lo haría el margen, sin el problema de la contracción de márgenes */
+}
+
+/* Varias clases diversas para su reutilización */
+.fltrt { /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase debe colocarse en un elemento div o break y debe ser el último elemento antes del cierre de un contenedor que incluya completamente a un elemento flotante */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+table.repes td 		{ text-align:right; }
+#repes input.text 	{ size:1em; max-width:2em; min-width: 2em; }
+#repes label 		{ margin-left:1em; min-width: 3em; orphans:inherit;  }
+
+.celda_falta { color:firebrick;}
+.celda_repe  { color:firebrick;}
+.fila_par    { background-color:beige; }
+.fila_impar	 { background-color:aliceblue; }
+
+
+.nuevo_repe { background-color:#0F0; }
+.quito_repe { background-color:#FC0; }
+
+.button_ok {
+	size:auto;
+	max-width:none;
+/*	min-width:none; */
+	background-color: #e6e6cc;
+}
+
+.thrColHybHdr #contenido h1 
+{
+	color: #666633;
+	font-size: medium;
+	font-family: arial,tahoma,verdana,helvetica,sans-serif,serif;
+	font-weight: bold;
+	border-top-width: 2px;
+/*	border-right-width-value: 2px; 
+	border-right-width-ltr-source: physical; 
+	border-right-width-rtl-source: physical; */
+	border-bottom-width: 2px; 
+/*	border-left-width-value: 2px;
+	border-left-width-ltr-source: physical; 
+	border-left-width-rtl-source: physical; */
+	border-top-style: solid;
+/*	border-right-style-value: solid;
+	border-right-style-ltr-source: physical;
+	border-right-style-rtl-source: physical; */
+	border-bottom-style: solid;
+/*	border-left-style-value: solid;
+	border-left-style-ltr-source: physical;
+	border-left-style-rtl-source: physical; */
+	border-top-color: #e6e6cc;
+/*	border-right-color-value: #e6e6cc;
+	border-right-color-ltr-source: physical;
+	border-right-color-rtl-source: physical;*/
+	border-bottom-color: #e6e6cc;
+/*	border-left-color-value: #e6e6cc;
+	border-left-color-ltr-source: physical;
+	border-left-color-rtl-source: physical;*/
+	background-color: #f3f3e9;
+	padding-top: 2px;
+	padding-right: 1em;
+	padding-bottom: 2px;
+	padding-left: 1em;
+	margin-top: 0pt;
+	margin-right: 0pt;
+	margin-bottom: 1ex;
+	margin-left: 0pt;
+	text-align:left;
+}
+
+.mensaje_error { color: crimson; }
+.mensaje_ok    { color: darkgreen; }
+
+.centrado { text-align:center; }
+
+.noleido {
+	font-weight:bold;
+	color:#00F;
+}
+.leido { color:#000; }
+
+.lista_par { 
+	background-color: Cornsilk;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.lista_impar  { 
+	background-color:#ffffff;  
+	font-family:"Courier New", Courier, monospace;
+}
+
+.botonera { text-align:center; }
+
+#form_label /* parte izquierda de un formulario las etiquetas */
+{
+	float:left;
+	padding-left:1em;	
+	margin-right:1em;
+}
+
+#form_field /* parte izquierda de un formulario las etiquetas */
+{
+}
+
+#caja_mensaje {
+	border: 1px #e6e6cc solid;
+	padding: 1em;
+}
+
+/*.fielcell input {
+	color: #090;
+}*/
