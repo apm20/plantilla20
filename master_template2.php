@@ -107,7 +107,7 @@
                                     <a href="<?php echo site_url('ayuda/contacto') ?>"><i class="fa fa-envelope-o "></i> Contacto</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('ayuda/Colaboradores') ?>"> <img src="http://www.cromosrepes.com/img/parejita.jpg" width=15%  alt="Intercambio de cromos"> Colabora</a>
+                                    <a href="<?php echo site_url('ayuda/Colaboradores') ?>"><i class="fa fa-astar "></i>  Colabora</a>
                                 </li>
 
                             </ul>
