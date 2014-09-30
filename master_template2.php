@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- PRUEBAS 20 Bootstrap 3.2.0 -->
+<!-- PRUEBAS20 Bootstrap 3.2.0 -->
 <head>
 
     <meta charset="utf-8">
@@ -106,9 +106,6 @@
                                 <li>
                                     <a href="<?php echo site_url('ayuda/contacto') ?>"><i class="fa fa-envelope-o "></i> Contacto</a>
                                 </li>
-                                <li>
-                                    <a href="<?php echo site_url('ayuda/Colaboradores') ?>"><img src="http://www.cromosrepes.com/img/parejita.jpg" width=10%  alt="Intercambio de cromos"> Colabora</a>
-                                </li>
 
                             </ul>
                             <!-- /.nav-second-level -->
@@ -133,7 +130,11 @@
 <!--                        <div class="col-lg-12">
                             <img src="img/3cartas.png" width="100px" />
                             </div> -->
-                    
+                    <div class="row text-center">
+                        <div class="col-lg-12">
+                            <img src="http://www.cromosrepes.com/img/parejita.jpg" width="160"  alt="Intercambio de cromos">
+                        </div>
+                    </div>
                     <!-- Adsense Lateral Gordo 160x600 recomendacion fin -->
 
                 </div>
@@ -142,10 +143,11 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper" style="min-height: 862px; background-color: #eee;">
-        <div class="row">
-          <div class="container" >
-          <div class="panel" style="margin-top:40px; margin-bottom:40px; padding-left:20px" >
+        <div id="page-wrapper" style="min-height: 862px;background-color: #eee;">
+            <div class="row">
+                <!-- <div class="container"> -->
+                    <div class="panel" style="padding:10px;margin-top:10px;margin-bottom:10px;" >
+                        <?php
                         // Aquí se pinta el contenido que cambia en cada página
                         print $contenido
                         ?>
@@ -165,12 +167,16 @@
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
-                </div> <!-- panel -->
-</div><!-- container -->
-        </div> <!-- row -->
+                </div>
+            </div> <!-- row container-->
 
 
-    </div><!-- page-wrapper -->
+        </div><!-- page-wrapper2 -->
+
+
+
+    </div>
+    <!-- /#wrapper -->
 
 
 
