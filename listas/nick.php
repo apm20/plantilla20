@@ -74,7 +74,7 @@ if ($finalizadas== 0) {
 			 ?>
 
 		
-		  <div class="progress-bar <?php echo $color?>" role="progressbar" aria-valuenow="<?php echo $porc ?>" aria-valuemin="0" 
+		  <div class="progress-bar progress-bar-striped active <?php echo $color?>" role="progressbar" aria-valuenow="<?php echo $porc ?>" aria-valuemin="0" 
 		  	aria-valuemax="100" style="width: <?php echo 100-round($porc ) ?>%;">
 		    <?php echo  100-round($porc )?>%
 		  </div>
