@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- PRUEBAS20 Bootstrap 3.2.0 -->
+<!-- PRUEBAS 20 Bootstrap 3.2.0 -->
 <head>
 
     <meta charset="utf-8">
