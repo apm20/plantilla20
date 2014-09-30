@@ -227,7 +227,7 @@
         '</li>'+
         '<li class="dropdown">'+
             '<a href="' + raiz + 'listas/nick/' + nick + '">' +
-                '<i class="fa fa-tasks fa-fw"></i> Listas'+
+                '<i class="fa fa-tasks fa-fw"></i> Mis colecciones'+
             '</a>'+
         '</li>'+
         '<!-- /.dropdown -->'+
