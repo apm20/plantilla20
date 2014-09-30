@@ -106,6 +106,9 @@
                                 <li>
                                     <a href="<?php echo site_url('ayuda/contacto') ?>"><i class="fa fa-envelope-o "></i> Contacto</a>
                                 </li>
+                                <li>
+                                    <a href="<?php echo site_url('ayuda/Colaboradores') ?>"><img src="http://www.cromosrepes.com/img/parejita.jpg" width=10%  alt="Intercambio de cromos"> Colabora</a>
+                                </li>
 
                             </ul>
                             <!-- /.nav-second-level -->
@@ -130,11 +133,7 @@
 <!--                        <div class="col-lg-12">
                             <img src="img/3cartas.png" width="100px" />
                             </div> -->
-                    <div class="row text-center">
-                        <div class="col-lg-12">
-                            <img src="http://www.cromosrepes.com/img/parejita.jpg" width="160"  alt="Intercambio de cromos">
-                        </div>
-                    </div>
+                    
                     <!-- Adsense Lateral Gordo 160x600 recomendacion fin -->
 
                 </div>
