@@ -107,7 +107,7 @@
                                     <a href="<?php echo site_url('ayuda/contacto') ?>"><i class="fa fa-envelope-o "></i> Contacto</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('ayuda/Colaboradores') ?>"><i class="fa fa-astar "></i>  Colabora</a>
+                                    <a href="<?php echo site_url('ayuda/Colaboradores') ?>"><i class="fa fa-star "></i>  Colabora</a>
                                 </li>
 
                             </ul>
