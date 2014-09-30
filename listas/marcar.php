@@ -46,7 +46,7 @@ foreach ( $javascript as $fic_js ) { ?>
 
 	<button class="btn btn-default btn-circle btn-lg"><i class="fa fa-chevron-left"></i><?php $link_back; ?></button>
     <button class='btn btn-success btn-circle btn-lg' type='submit' name='btn_ok' id='btn_ok' onclick="this.style.visibility = 'hidden';" /><i class="fa fa-floppy-o"></i></button>
-    <button class='btn btn-default btn-circle btn-lg' type='button' name='btn_todo_marcar' id='btn_todo_marcar' onclick="javascript:seleccionar_todo()" /><i class="fa fa-bookmark"></i><i class="fa fa-bookmark"></i></button>
+    <button class='btn btn-default btn-circle btn-lg' type='button' name='btn_todo_marcar' id='btn_todo_marcar' onclick="javascript:seleccionar_todo()" /><i class="fa fa-bookmark"></i></button>
     <button class='btn btn-default btn-circle btn-lg' type='button' name='btn_todo_desmarcar' id='btn_todo_desmarcar' onclick="javascript:deseleccionar_todo()" /><i class="fa fa-bookmark-o"></i></button>
 <p></p><center>
 <table class="table table-bordered">
