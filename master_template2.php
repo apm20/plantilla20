@@ -92,7 +92,7 @@
 
                         <li>
 
-                            <a href="#"><i class="fa fa-sitemap"></i> y...<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-sitemap"></i> Otros<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="http://vip.cromosrepes.com/chat/login.php"><i class="fa fa-comments "></i> Chat</a>
@@ -105,6 +105,9 @@
                                 </li>
                                 <li>
                                     <a href="<?php echo site_url('ayuda/contacto') ?>"><i class="fa fa-envelope-o "></i> Contacto</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url('ayuda/Colaboradores') ?>"> <img src="http://www.cromosrepes.com/img/parejita.jpg" width=10%  alt="Intercambio de cromos"> Colaboradores</a>
                                 </li>
 
                             </ul>
@@ -132,7 +135,7 @@
                             </div> -->
                     <div class="row text-center">
                         <div class="col-lg-12">
-                            <img src="http://www.cromosrepes.com/img/parejita.jpg" width="160"  alt="Intercambio de cromos">
+                           
                         </div>
                     </div>
                     <!-- Adsense Lateral Gordo 160x600 recomendacion fin -->
