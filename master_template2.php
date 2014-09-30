@@ -70,7 +70,7 @@
                     <ul class="nav" id="side-menu">
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Buscar usuario...">
+                                <input type="text" class="form-control" placeholder="Buscar usuario">
                                 <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
@@ -145,7 +145,7 @@
         <div id="page-wrapper" style="min-height: 862px; background-color: #eee;">
         <div class="row">
           <div class="container" >
-          <div class="panel" style="margin-top:40px; margin-bottom:40px; padding-left:20px; padding-right:20px" >
+          <div class="panel" style="margin-top:40px; margin-bottom:40px; padding: 20px 20px 20px 20px;" >
                         <?php
                         // Aquí se pinta el contenido que cambia en cada página
                         print $contenido
