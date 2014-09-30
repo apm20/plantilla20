@@ -222,7 +222,7 @@
         codigo = 
         '<li class="dropdown">'+
             '<a href="'+raiz+'mensajes/entrada">'+
-                '<i class="fa fa-envelope fa-fw"></i>  <span class="badge">'+getCookie("msg")+'</span></i>' +
+                '<span class="badge">'+getCookie("msg")+'</span> <i class="fa fa-envelope fa-fw"></i> ' +
             '</a>'+
         '</li>'+
         '<li class="dropdown">'+
@@ -232,7 +232,7 @@
         '</li>'+
         '<!-- /.dropdown -->'+
         '<li class="dropdown">'+
-            '<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-fw"></i><i class="fa fa-caret-down"></i> ' + nick + ' </a>' +
+            '<a class="dropdown-toggle" data-toggle="dropdown" href="#">' + nick + ' <i class="fa fa-user fa-fw"></i><i class="fa fa-caret-down"></i> </a>' +
             '<ul class="dropdown-menu dropdown-user">'+
                 '<li><a href="'+raiz+'evalua/menu"><i class="fa fa-exchange fa-fw"></i> Evaluaciones</a></li>'+
                 '<li><a href="'+raiz+'misdatos/menu"><i class="fa fa-gear fa-fw"></i> Preferencias</a></li>'+
