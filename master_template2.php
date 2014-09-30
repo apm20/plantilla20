@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ComosRepes.com 2.0</title>
+    <title>CromosRepes.com 2.0</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo site_url('css/bootstrap.min.css')?>" rel="stylesheet">
