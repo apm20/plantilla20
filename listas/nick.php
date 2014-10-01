@@ -128,7 +128,7 @@ if ($finalizadas== 0) {
 <?php echo  enlaces( $link_back, $usuario->nick_mostrar, $visitante  ) ?>
 <?php
 function enlaces( $link_back, $nick_mostrar, $p_visitante  ) {?>
-<button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> <?php echo $link_back;?></button>
+<?php echo "<button class='btn btn-default'><i class='fa fa-chevron-left'> </i> ".$link_back, "</button>";?>
 
 <?php if ($p_visitante)
 		echo anchor("mensajes/nuevo/".$nick_mostrar, "<button class='btn btn-default'><strong> Enviar Mensaje</strong></button>");
