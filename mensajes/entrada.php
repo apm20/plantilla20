@@ -35,7 +35,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <?php }?>
 <h1><?php echo $title ?></h1>
-<?php enlaces( $estado ); ?>
+<?php enlaces( strval($estado) ); ?>
 <p></p>
 <center>
 <table class="table table-bordered table-hover">
