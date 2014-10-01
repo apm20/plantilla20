@@ -1,5 +1,5 @@
 
-<h1><?php echo $title ?></h1>
+<h1><i class="fa fa-list-ul"></i> <?php echo $title ?></h1>
 <style type="text/css">
 	textarea{resize:none;}
 </style>
