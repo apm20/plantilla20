@@ -26,9 +26,9 @@ if ($finalizadas== 0) {
 } else {
 ?>
 <ul class="nav nav-tabs" role="tablist">
-  <li <?php if ($finalizadas== 0) echo 'class="active"'?> <?php echo anchor("listas/nick/".$nick_mostrar," Activas") ?> </li>
+  <li <?php if ($finalizadas== 0) echo 'class="active"'?> <?php echo anchor("listas/nick/".$usuario->nick_mostrar," Activas") ?> </li>
    
-  <li <?php if ($finalizadas== 1) echo 'class="active"'?> <?php echo anchor("listas/finalizadas/".$nick_mostrar," Colecciones finalizadas") ?> </li>
+  <li <?php if ($finalizadas== 1) echo 'class="active"'?> <?php echo anchor("listas/finalizadas/".$usuario->nick_mostrar," Colecciones finalizadas") ?> </li>
 
 </ul>
 
