@@ -40,7 +40,7 @@
 </div>
 
 <button class="btn btn-default"><?php echo anchor('usuario/Registro', 'Quiero registrarme')?></button>
-<button class="btn btn-default"><i class="glyphicon glyphicon-question-sign"> </i> <?php echo anchor ('usuario/PedirPassword','No puedo acceder a mi cuenta')?></button>
+<?php echo anchor ('usuario/PedirPassword','<button class="btn btn-link"><i class="glyphicon glyphicon-question-sign"> </i> No puedo acceder a mi cuenta</button>')?>
 
 
 </center>
