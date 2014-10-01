@@ -58,7 +58,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         </td><td>
         <?php echo  anchor('listas/nick/'.$row["nick"],$row["nick_mostrar"]) ?>
        </td><td>
-        <?php if ($row["leido"]=='2') echo '<abbr title="Respondido"><i class="glyphicon glyphicon-share-alt"></i></abbr>'; else echo '&nbsp;'; ?>
+        <?php if ($row["leido"]=='2') echo '<abbr title="Respondido"><i class="fa fa-share-alt"></i></abbr>'; else echo '&nbsp;'; ?>
         </td><td align="left">
         <?php if (strlen ($row["asunto"])>0 ) { 
             	echo anchor('mensajes/detalle/'.$row["id"]."/".$url_esc, $row["asunto"], array('name' => 'a'.$row["id"]) );
@@ -66,7 +66,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         ?>
         </td><td>
         
-        <button type="button" class="btn btn-warning btn-circle btn-xs" name="<?php echo $row["id"]?>" title="Eliminar mensaje"><i class="fa fa-times"></i></button>
+        <button type="button" class="btn btn-outline btn-warning btn-circle btn-xs" name="<?php echo $row["id"]?>" title="Eliminar mensaje"><i class="fa fa-times"></i></button>
 		<?php $cuantos ++; ?>
         </td></tr>
     <?php if ( $row["leido"]=='0' ) echo "</strong>" ?>        
