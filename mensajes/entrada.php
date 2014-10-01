@@ -104,7 +104,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
   
 
-
+<?php
 function enlaces ( $estado ) {
 	echo 
 	anchor  ('mensajes/menu/'		,'<button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> Volver</button>'		,array('class'=>'back')).'  '.
