@@ -35,7 +35,7 @@
   </div>
   
   
-  <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn-success"  />
+  <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn-success btn-lg btn-outline"  />
 
 <p></p>
 
@@ -48,9 +48,7 @@
 
 <p></p>
 
-<button class="btn btn-default"><b><i class="glyphicon glyphicon-send"> </i> <?php echo anchor('usuario/Registro', 'No tengo cuenta. Quiero registrarme')?></b></button>
+<button class="btn btn-default"><b><i class="glyphicon glyphicon-send"> </i> <?php echo anchor('usuario/Registro', 'Registrarme')?></b></button>
 <p></p>
 
-<button class="btn btn-default"><i class="glyphicon glyphicon-question-sign"> </i> <?php echo anchor ('usuario/PedirPassword','No recuerdo mi usuario o mi contraseña')?></button>
-
-<button class="btn btn-default"><i class="glyphicon glyphicon-envelope"> </i> <?php echo anchor('usuario/PedirPassword', 'No he recibido el mensaje de activación')?></button>
+ <?php echo anchor('usuario/PedirPassword', '<button class="btn btn-link">No puedo acceder a mi cuenta</button>')?>
