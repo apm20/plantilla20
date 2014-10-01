@@ -12,13 +12,19 @@ Información: Si llegas a 100 evaluaciones se borrar&aacute;n las m&aacute;s ant
 <p> </p>Información:	Al principio como tienes pocas evaluaciones, estás obligado a hacer primero tus envíos, no te preocupes, es una buena forma de ganarte la confianza de toda la comunidad.
 <?php } ?>
 <p></p>Si pusiste una evaluaci&oacute;n negativa y quieres rectificarla, haz una evaluaci&oacute;n positiva y la negativa desaparecer&aacute;.
-<div id="menu_botones" class="row" > 
-  <div class="col-md-4 col-md-offset-2">Opciones 
-<p></p><?php echo  anchor('evalua/recibidas/'.$sesion["ses_nick_mostrar"],"<button class='btn btn-default btn-block'><i class='fa fa-user pull-left'></i> <span class='pull-left'>Ver tus &uacute;ltimas Evaluaciones Recibidas</span></button>") ?>
-<p></p><?php echo  anchor('evalua/emitidas/'.$sesion["ses_usuario_id"]	 ,"<button class='btn btn-default btn-block text-left'><i class='fa fa-users pull-left'></i> <span class='pull-left'>Ultimas Evaluaciones Emitidas</span></button>") ?>
-<p></p><?php echo  anchor('seleccion/buscar/evalua'	                 ,"<button class='btn btn-default btn-block'><i class='fa fa-plus pull-left'> </i> <span class='pull-left'>Emitir Nueva Evaluación</span></button>") ?>
+<div class="text-center">
+<div class="btn-group-vertical ">
+  <div class="btn-group">
+   <p></p>
+   <?php echo  anchor('evalua/recibidas/'.$sesion["ses_nick_mostrar"],"<button class='btn btn-default btn-block'><i class='fa fa-user pull-left'></i> <span class='pull-left'>Ver tus &uacute;ltimas Evaluaciones Recibidas</span></button>") ?>
+   <p></p>
+   <?php echo  anchor('evalua/emitidas/'.$sesion["ses_usuario_id"]	 ,"<button class='btn btn-default btn-block text-left'><i class='fa fa-users pull-left'></i> <span class='pull-left'>Ultimas Evaluaciones Emitidas</span></button>") ?>
+   <p></p>
+   <?php echo  anchor('seleccion/buscar/evalua'	                     ,"<button class='btn btn-default btn-block'><i class='fa fa-plus pull-left'> </i> <span class='pull-left'>Emitir Nueva Evaluación</span></button>") ?>
   </div>
+ </div>
 </div>
+
 <p></p>Tienes <strong><style="font_size:big"><?php echo $total_pos; ?></style></strong> puntos positivos y
 <?php if ($total_neg < 0) {?>
    tienes <h2><?php echo $total_neg; ?></h2>  puntos negativos
