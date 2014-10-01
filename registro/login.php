@@ -21,14 +21,14 @@
     }
 </script>	
 
-    <div class="input-group col-md-3">
+    
        <input type="text" name="nick" id="nick" class="form-control" placeholder="Usuario" onclick="this.focus();this.select()" 
         	    value="<?php echo $nick ?>" /></td><td><?php echo form_error('nick')?>
-    </div>
-        <div class="input-group col-md-3">
+    <br/>
+       
        <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" onclick="this.focus();this.select()" 
         	    value="<?php echo $password?>" /><td><?php echo form_error('password')?>
-    </div>
+    
 
     <div class="checkbox">
         <label>
