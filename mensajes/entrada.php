@@ -43,7 +43,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     <tr align="center" class="active">
         <td width="15%"><strong>Fecha</center></td>
         <td width="15%"><strong>Remitente<strong></dh>
-        <td width="8%"><strong><abbr title="Indica si el mensaje a sido respondido"><i class="glyphicon glyphicon-share-alt"></i></strong></abbr></td>
+        <td width="8%"><strong><abbr title="Indica si el mensaje a sido respondido"><i class="fa fa-share"></i><strong></abbr></td>
         <td width="57%"><strong>Asunto</strong></td>
         <td width="5%"><strong></strong></td>
     </tr>
@@ -58,7 +58,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         </td><td>
         <?php echo  anchor('listas/nick/'.$row["nick"],$row["nick_mostrar"]) ?>
        </td><td>
-        <?php if ($row["leido"]=='2') echo '<abbr title="Respondido"><i class="fa fa-share-alt"></i></abbr>'; else echo '&nbsp;'; ?>
+        <?php if ($row["leido"]=='2') echo '<abbr title="Respondido"><i class="fa fa-share"></i></abbr>'; else echo '&nbsp;'; ?>
         </td><td align="left">
         <?php if (strlen ($row["asunto"])>0 ) { 
             	echo anchor('mensajes/detalle/'.$row["id"]."/".$url_esc, $row["asunto"], array('name' => 'a'.$row["id"]) );
