@@ -12,10 +12,12 @@ Información: Si llegas a 100 evaluaciones se borrar&aacute;n las m&aacute;s ant
 <p> </p>Información:	Al principio como tienes pocas evaluaciones, estás obligado a hacer primero tus envíos, no te preocupes, es una buena forma de ganarte la confianza de toda la comunidad.
 <?php } ?>
 <p></p>Si pusiste una evaluaci&oacute;n negativa y quieres rectificarla, haz una evaluaci&oacute;n positiva y la negativa desaparecer&aacute;.
-<div id="menu_botones" class="col-lg-6 col-md-12" >
-<p></p><?php echo  anchor('evalua/recibidas/'.$sesion["ses_nick_mostrar"],"<button class='btn btn-default btn-block'><i class='fa fa-user'> </i> Ver tus &uacute;ltimas Evaluaciones Recibidas</button>") ?>
-<p></p><?php echo  anchor('evalua/emitidas/'.$sesion["ses_usuario_id"]	 ,"<button class='btn btn-default btn-block'><i class='fa fa-users'></i> Ultimas Evaluaciones Emitidas</button>") ?>
-<p></p><?php echo  anchor('seleccion/buscar/evalua'	                 ,"<button class='btn btn-default btn-block'><i class='fa fa-plus'> </i> Emitir Nueva Evaluación</button>") ?>
+<div id="menu_botones" class="row" > 
+  <div class=".col-md-6 .col-md-offset-3">Opciones 
+<p></p><?php echo  anchor('evalua/recibidas/'.$sesion["ses_nick_mostrar"],"<button class='text-left btn btn-default btn-block'><i class='fa fa-user'> </i> Ver tus &uacute;ltimas Evaluaciones Recibidas</button>") ?>
+<p></p><?php echo  anchor('evalua/emitidas/'.$sesion["ses_usuario_id"]	 ,"<button class='text-left btn btn-default btn-block'><i class='fa fa-users'></i> Ultimas Evaluaciones Emitidas</button>") ?>
+<p></p><?php echo  anchor('seleccion/buscar/evalua'	                 ,"<button class='text-left btn btn-default btn-block'><i class='fa fa-plus'> </i> Emitir Nueva Evaluación</button>") ?>
+  </div>
 </div>
 <p></p>Tienes <strong><style="font_size:big"><?php echo $total_pos; ?></style></strong> puntos positivos y
 <?php if ($total_neg < 0) {?>
