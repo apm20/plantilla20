@@ -46,7 +46,9 @@
         </label>
       </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn-lg btn-outline btn-success btn-block"  />
+                                <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn-lg btn-outline btn-success btn-block"  /><br/>
+                                <?php echo anchor('usuario/Registro', '<button class="btn btn-lg btn-outline btn-primary btn-block"><i class="glyphicon glyphicon-send"> </i> Registrarme</button>')?><br/>
+                                <?php echo anchor ('usuario/PedirPassword','<button class="btn btn-lg btn-outline btn-link btn-block"><i class="glyphicon glyphicon-question-sign"> </i> No puedo acceder a mi cuenta</button>')?>
                             </fieldset>
                         </form>
                     </div>
