@@ -19,14 +19,11 @@
     }
 </script>	
 
-    <div class="input-group input-group">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-      <input type="text" name="nick" id="nick" class="form-control" placeholder="Usuario" onclick="this.focus();this.select()" 
+    <div class="input-group">
+       <input type="text" name="nick" id="nick" class="form-control" placeholder="Usuario" onclick="this.focus();this.select()" 
         	    value="<?php echo $nick ?>" /></td><td><?php echo form_error('nick')?>
     </div>
-    <div class="input-group input-group">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"> </i></span>
-      <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" onclick="this.focus();this.select()" 
+       <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" onclick="this.focus();this.select()" 
         	    value="<?php echo $password?>" /><td><?php echo form_error('password')?>
     </div>
 
@@ -36,7 +33,7 @@
 		    <?php if ($recuerdame==1) echo "checked"; ?> > Recuérdame
         </label>
       </div>
-      <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn btn-outline btn-success"  />
+      <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn btn-outline btn-success btn-lg"  />
     </form>
 </fieldset>
 </div>
