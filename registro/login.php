@@ -48,7 +48,7 @@
 
 <p></p>
 
-<button class="btn btn-default"><b><i class="glyphicon glyphicon-send"> </i> <?php echo anchor('usuario/Registro', 'Registrarme')?></b></button>
+<button class="btn btn-drimary"><?php echo anchor('usuario/Registro', 'Registrarme')?></button>
 <p></p>
 
  <?php echo anchor('usuario/PedirPassword', '<button class="btn btn-link">No puedo acceder a mi cuenta</button>')?>
