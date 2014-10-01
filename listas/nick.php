@@ -128,10 +128,12 @@ if ($finalizadas== 0) {
 <?php echo  enlaces( $link_back, $usuario->nick_mostrar, $visitante  ) ?>
 <?php
 function enlaces( $link_back, $nick_mostrar, $p_visitante  ) {?>
-<?php echo $link_back, "<button class='btn btn-default'><i class='fa fa-chevron-left'> </i> Volver</button>";?>
+<?php 
+echo anchor("mensajes/menu/ <button class='btn btn-default'> Volver</button>");
+?>
 
 <?php if ($p_visitante)
-		echo anchor("mensajes/nuevo/".$nick_mostrar, "<button class='btn btn-default'><strong> Enviar mensaje a ".$nick_mostrar,"</strong></button>");
+		echo anchor("mensajes/nuevo/".$nick_mostrar, "<button class='btn btn-default'><strong> Enviar mensaje</strong></button>");
 		
 	
 }
