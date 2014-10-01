@@ -35,7 +35,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <?php }?>
 <h1><?php echo $title ?></h1>
-<?php enlaces( strval($estado) ); ?>
+<?php enlaces( $estado ); ?>
 <p></p>
 <center>
 <table class="table table-bordered table-hover">
@@ -124,23 +124,23 @@ echo " ESTADO: ".$estado." - ";
     echo "<div class='row'>";
     echo '<ul class="nav nav-tabs" role="tablist">';
     echo '<li ';
-    if ( intval($estado) == 0 ) echo 'class="active"';
+    if ( $estado == '0' ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/0'		,'<i class="glyphicon glyphicon-inbox"></i> Buzón de entrada',array('class'=>'back')); 
     echo '</li>';
     echo '<li ';
-    if ( $estado == 2 ) echo 'class="active"';
+    if ( $estado == '2' ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/2'		,'<i class="glyphicon glyphicon-transfer"> </i> Negociando',array('class'=>'back'));	
     echo '</li>';
     echo '<li ';
-    if ( $estado == 4 ) echo 'class="active"';
+    if ( $estado == '4' ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/4'		,'<i class="glyphicon glyphicon-time"> </i> Esperando',array('class'=>'back'));
     echo '</li>';
     echo '<li ';
-    if ( $estado == 1 ) echo 'class="active"';
+    if ( $estado == '1' ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="glyphicon glyphicon-remove"> </i> Borrados',array('class'=>'back'));
     echo '</li>';
     echo '<li ';
-    if ( strcasecmp($estado,'S')==0 ) echo 'class="active"';
+    if ( $estado == 'S' ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/S'		,'<i class="glyphicon glyphicon-ban-circle"> </i> No deseado',array('class'=>'back'));
     echo '</li>';
     echo '</ul>';		
