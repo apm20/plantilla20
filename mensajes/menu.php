@@ -41,18 +41,6 @@ Aqu&iacute; puedes escribir nuevos mensajes y ver quien te ha escrito.
 </div>
 <?php $socio=$sesion["ses_socio"]; ?>
 
-<?php /* if ( $socio <= 2 ) { ?>
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Rectangulo grande -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:336px;height:280px"
-     data-ad-client="ca-pub-8628628791781009"
-     data-ad-slot="2829732978"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<?php  } */ ?>
 
 <?php
 function PintaBoton ( $url, $icono, $texto, $title ) {
@@ -67,3 +55,16 @@ function PintaBoton ( $url, $icono, $texto, $title ) {
 <p>Los mensajes se guardan dos meses antes de ser borrados.</p>
 <p>Si tienes m&aacute;s de 20 mensajes pendientes de lectura no aparecer&aacute;s en los resultados del buscador</p>
 <p>Si tienes m&aacute;s de 40 mensajes pendientes de lectura no recibir&aacute;s nuevos mensajes hasta que los leas</p>
+
+<?php if ( $socio <= 2 ) { ?>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Rectangulo grande -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-8628628791781009"
+     data-ad-slot="2829732978"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<?php  } ?>
