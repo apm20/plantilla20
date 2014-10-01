@@ -44,8 +44,8 @@ foreach ( $javascript as $fic_js ) { ?>
 
 <p></p>
 
-	<button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> <?php echo $link_back; ?></button>
-    <input class='btn btn-success' type='submit' name='btn_ok' id='btn_ok' value='<i class="fa fa-floppy-o"></i> Guardar Cambios' onclick="this.style.visibility = 'hidden';" />
+	<?php $link_back,"<button class='btn btn-default'><i class='glyphicon glyphicon-chevron-left'> </i> Volver </button> "; ?>
+    <button class='btn btn-success' type='submit' name='btn_ok' id='btn_ok' onclick="this.style.visibility = 'hidden'" />><i class="fa fa-floppy-o"></i> Guardar Cambios</button>
     <input class='btn btn-default' type='button' name='btn_todo_marcar' id='btn_todo_marcar' value="Marcar Todos" onclick="javascript:seleccionar_todo()" />
     <input class='btn btn-default' type='button' name='btn_todo_desmarcar' id='btn_todo_desmarcar' value="Desmarcar Todos" onclick="javascript:deseleccionar_todo()" />
 <p></p><center>
