@@ -4,6 +4,7 @@
 <p><?php echo $mensaje?></p>
 <?php endif; ?>
 <script type="text/javascript" src="http://www.cromosrepes.com/js/adsense.js"></script>
+<center>
 <div class="row text-center">
 <div class="col-xs-12 col-sm-6 col-lg-6">
 
@@ -17,7 +18,7 @@
     	document.write( '<input type="hidden" name="ad" id="ad" value="0"/>');
     }
 </script>	
-<center>
+
     <div class="input-group input-group col-md-3">
       <span class="input-group-addon"><i class="fa fa-user"></i></span>
       <input type="text" name="nick" id="nick" class="form-control" placeholder="Usuario" onclick="this.focus();this.select()" 
@@ -46,3 +47,4 @@
 </div>
 
 
+</center>
