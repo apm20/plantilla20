@@ -50,7 +50,7 @@
                                 <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn-lg btn-outline btn-success btn-block"  /><br/>
                                 </form>
 </fieldset>
-                                <?php echo anchor('usuario/Registro', '<button class="btn btn-outline btn-primary btn">Registrarme</button>')?><br/>
+                                <?php echo anchor('usuario/Registro', '<button class="btn btn-outline btn-primary btn">Registrarme</button>')?><p></p>
                                 <?php echo anchor ('usuario/PedirPassword','<button class="btn btn-outline btn-link btn-block"><i class="glyphicon glyphicon-question-sign"> </i> No puedo acceder a mi cuenta</button>')?>
                             
 </center>
