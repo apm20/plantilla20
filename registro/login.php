@@ -4,9 +4,8 @@
 <p><?php echo $mensaje?></p>
 <?php endif; ?>
 <script type="text/javascript" src="http://www.cromosrepes.com/js/adsense.js"></script>
+
 <center>
-<div class="row text-center">
-<div class="col-xs-12 col-sm-6 col-lg-6">
 
 <fieldset>
 	<form  method="post">
@@ -40,11 +39,7 @@
 <p></p><?php echo anchor ('usuario/PedirPassword','<button class="btn btn-link"><i class="glyphicon glyphicon-question-sign"> </i> No puedo acceder a mi cuenta</button>')?>
     </form>
 </fieldset>
-</div>
-
-
-
-</div>
-
-
 </center>
+
+
+
