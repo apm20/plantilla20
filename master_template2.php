@@ -150,6 +150,15 @@
                         // Aquí se pinta el contenido que cambia en cada página
                         print $contenido
                         ?>
+                    
+                    </div><!-- panel -->
+                <!-- </div>  container -->
+            </div> <!-- row -->
+        </div><!-- page-wrapper -->
+
+         <div id="footer-ad">
+            <div class="row container">
+                <div class="text-right hidden-xs col-sm-12 col-md-12 col-lg-12">
                     <ins class="adsbygoogle"
                             style="display:inline-block;width:728px;height:90px"
                             data-ad-client="ca-pub-8628628791781009"
@@ -157,20 +166,11 @@
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
-                    </div><!-- panel -->
-                <!-- </div>  container -->
-            </div> <!-- row -->
-        </div><!-- page-wrapper -->
-
-        <div id="footer-ad">
-            <div class="row container">
-                
-                
+                </div>
             </div> <!-- row container-->
 
 
         </div><!-- page-wrapper2 -->
-
 
 
     </div>
