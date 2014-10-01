@@ -144,16 +144,17 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper" style="min-height: 862px;  background-color: #eee;">
-        <div class="row">
-          <div class="container" >
-          <div class="panel" style="margin-top:40px; margin-bottom:40px; padding: 20px 20px 20px 20px;" >
+           <div id="page-wrapper" style="min-height: 862px;background-color: #eee;">
+            <div class="row">
+                <!-- <div class="container"> -->
+                    <div class="panel" style="padding:10px;margin-top:10px;margin-bottom:10px;" >
                         <?php
                         // Aquí se pinta el contenido que cambia en cada página
                         print $contenido
                         ?>
+                   
                     
-                    </div><!-- panel -->
+         </div><!-- panel -->
                 <!-- </div>  container -->
             </div> <!-- row -->
         </div><!-- page-wrapper -->
