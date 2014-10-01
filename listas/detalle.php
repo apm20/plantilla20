@@ -83,7 +83,7 @@
                }  ?> <?php if ($visitante == false) { ?>
  	
 <?php  } ?>
-            </td><td width=33%>	<span> <?php echo  anchor  ( "listas/marcar/repes/".$coleccion->id, ' <i class="glyphicon glyphicon-edit"> </i> ', array('class'=>'back') )?></span>Repes:    <?php echo $row->t_repes?> <?php if ($visitante == false) { ?>
+            </td><td width=33%>	<span> <?php echo  anchor  ( "listas/marcar/repes/".$coleccion->id, ' <i class="fa fa-edit"> </i> ', array('class'=>'back') )?></span>Repes:    <?php echo $row->t_repes?> <?php if ($visitante == false) { ?>
 
 <?php  } ?></td>
         </tr></table>
