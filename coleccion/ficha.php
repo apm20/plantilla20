@@ -88,5 +88,4 @@
 } ?>
 <?php if ($cuantos>=200) { ?><br/>Solo se muestran los 200 primeros usuarios que han actualizado listas recientemente<?php } ?>
 
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
+
