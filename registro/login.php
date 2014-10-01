@@ -20,8 +20,10 @@
   
   <input type="text" name="nick" id="nick" class="form-control" placeholder="Usuario" autofocus onclick="this.focus();this.select()" 
         	value="<?php echo $nick ?>" /></td><td><?php echo form_error('nick')?>
+        	
+        	</div>
         	<br/>
-  
+  <div class="input-group col-md-3">
   <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" onclick="this.focus();this.select()" 
         	value="<?php echo $password?>" /><td><?php echo form_error('password')?>
 </div>
