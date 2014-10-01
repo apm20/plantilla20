@@ -114,10 +114,10 @@
                             <a href="#"><i class="fa fa-share-alt"></i> Redes sociales<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="https://www.facebook.com/CromosRepes"><i class="fa fa-facebook-square"></i> Facebook</a>
+                                    <a href="https://www.facebook.com/CromosRepes" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
                                 </li>
                                 <li>
-                                    <a href="https://plus.google.com/+cromosrepes/posts"><i class="fa fa-google-plus-square"></i> Google+</a>
+                                    <a href="https://plus.google.com/+cromosrepes/posts" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
                                 </li>
                                  </ul>
                                  </li>
