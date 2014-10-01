@@ -3,7 +3,7 @@
 <style type="text/css">
 	textarea{resize:none;}
 </style>
-<button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> <?php echo $link_back;?></button>
+<button class="btn btn-default"><i class="fa fa-chevron-left"> </i> <?php echo $link_back;?></button>
 <?php echo  enlaces( $visitante,$coleccion, $autor,$usuario->nick_mostrar,$usuario->id  ) ?>
 <br />    
 <p>
@@ -241,8 +241,8 @@ Truco PC: separa cromos con un punto, así puedes usar el teclado numérico con 
 function enlaces( $visitante,$coleccion,$autor,$p_nick,$p_id ) {
 	
 	if ($visitante == false) {
-	 echo "  <b>".anchor  ( "buscador/coleccion/".$p_id."/".$coleccion->id, '<button class="btn btn-primary"><i class="glyphicon glyphicon-transfer"> </i> Buscar quien tiene mis faltas</button>' 	, array('class'=>'back') );
-	 echo "</b> ".anchor( "coleccion/borrarlista/".$coleccion->esc_nombre,'<button class="btn btn-default"><i class="glyphicon glyphicon-remove"> </i> Eliminar la lista</button>');
+	 echo "  <b>".anchor  ( "buscador/coleccion/".$p_id."/".$coleccion->id, '<button class="btn btn-primary"><i class="fa fa-transfer"> </i> Buscar quien tiene mis faltas</button>' 	, array('class'=>'back') );
+	 echo "</b> ".anchor( "coleccion/borrarlista/".$coleccion->esc_nombre,'<button class="btn btn-default"><i class="fa fa-remove"> </i> Eliminar la lista</button>');
 	 if ($autor == 1 )
 	 	echo "  ".anchor  ( "wiki/coleccion/".$coleccion->id, ' <button class="btn btn-default">Wiki</button>' 	, array('class'=>'back') );
 	} else {
