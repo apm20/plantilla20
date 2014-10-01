@@ -129,7 +129,7 @@ if ($finalizadas== 0) {
 <?php
 function enlaces( $link_back, $nick_mostrar, $p_visitante  ) {?>
 <?php 
-echo anchor("mensajes/menu/"," <button class='btn btn-default'><i class='fa fa-chevron-left'></i> Volver</button>");
+echo anchor("usuario/resumen/"," <button class='btn btn-default'><i class='fa fa-chevron-left'></i> Volver</button>");
 ?>
 
 <?php if ($p_visitante)
