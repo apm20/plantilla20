@@ -31,23 +31,24 @@
                     <div class="panel-body">
                         <form role="form">
                             <fieldset>
-                                <div class="input-group input-group col-md-3">
+                                <div class="input-group">
       <span class="input-group-addon"><i class="fa fa-user"></i></span>
       <input type="text" name="nick" id="nick" class="form-control" placeholder="Usuario" onclick="this.focus();this.select()" 
         	    value="<?php echo $nick ?>" /></td><td><?php echo form_error('nick')?>
     </div>
-                                <div class="input-group input-group col-md-3">
+                                <div class="input-group">
       <span class="input-group-addon"><i class="fa fa-lock"> </i></span>
       <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" onclick="this.focus();this.select()" 
         	    value="<?php echo $password?>" /><td><?php echo form_error('password')?>
     </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me
-                                    </label>
-                                </div>
+                               <div class="checkbox">
+        <label>
+          <input type="checkbox"name="recuerdame" value="1"
+		    <?php if ($recuerdame==1) echo "checked"; ?> > Recuérdame
+        </label>
+      </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                                <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn-lg btn-outline btn-success btn-block"  />
                             </fieldset>
                         </form>
                     </div>
