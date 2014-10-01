@@ -67,7 +67,7 @@
     		Empezada: <?php echo strftime('%d %b %Y',strtotime( $row->f_alta )); ?>
 		</td><td width=33%>
             <?php if ( $row->t_faltas ) { ?>
-	            <span> <?php echo  anchor  ( "listas/marcar/faltas/".$coleccion->id, ' <i class="glyphicon glyphicon-edit"> </i> ', array('class'=>'back') )  ?><span>Faltas:   <?php echo $row->t_faltas?> 
+	            <span> <?php echo  anchor  ( "listas/marcar/faltas/".$coleccion->id, ' <i class="fa fa-edit"> </i> ', array('class'=>'back') )  ?><span>Faltas:   <?php echo $row->t_faltas?> 
                 <?php if ($coleccion->cromos==0 ) {
 						$porc = 0;  
 				} else {
@@ -78,7 +78,7 @@
             
             <?php } else { 
               		if ( strlen($row->tiempo) >1 ) {?>
-	            		<span> <?php echo  anchor  ( "listas/marcar/faltas/".$coleccion->id, ' <i class="glyphicon glyphicon-edit"> </i> ', array('class'=>'back') )  ?><span>Finalizada: <?php echo strftime('%d %b %Y',strtotime( $row->f_fin )); ?>
+	            		<span> <?php echo  anchor  ( "listas/marcar/faltas/".$coleccion->id, ' <i class="fa fa-edit"> </i> ', array('class'=>'back') )  ?><span>Finalizada: <?php echo strftime('%d %b %Y',strtotime( $row->f_fin )); ?>
              	<?php } 
                }  ?> <?php if ($visitante == false) { ?>
  	
