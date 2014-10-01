@@ -76,7 +76,7 @@
 					echo $col["notas"];
 ?>
 	</div><br />
-	<?php if ($cuantos>=200) { ?><br/>Solo se muestran los 200 primeros usuarios que han actualizado listas recientemente<?php } ?>
+	
 <?php	   if ( $col["socio"] > 0 ) { echo "</strong>"; }?>
 <?php   }
    }
@@ -91,4 +91,4 @@
 
 <br/><br/><br/><br/>
 <br/><br/><br/><br/>
-
+<?php if ($cuantos>=200) { ?><br/>Solo se muestran los 200 primeros usuarios que han actualizado listas recientemente<?php } ?>
