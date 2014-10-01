@@ -1,4 +1,4 @@
-<h1><button class="btn btn-default btn-circle btn-lg" /><small>Mis Evaluaciones <?php echo $reputa; ?><small></h1>
+<h1><button class="btn btn-default btn-circle btn-lg"><i class="fa fa-chevron-left"></i></button><small>Mis Evaluaciones <?php echo $reputa; ?><small></h1>
 <p>
   <?php if ( $total_pos >90 && $socio == 0 ) {?>
 Información: Si llegas a 100 evaluaciones se borrar&aacute;n las m&aacute;s antiguas de seis meses.</p>
