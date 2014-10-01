@@ -109,6 +109,18 @@
                                 <li>
                                     <a href="<?php echo site_url('ayuda/Colaboradores') ?>"><i class="fa fa-star "></i>  Colabora</a>
                                 </li>
+                                <li>
+
+                            <a href="#"><i class="fa fa-sitemap"></i> Redes sociales<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="http://facebook.com/CromosRepes"><i class="fa fa-facebook-square"></i> Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="http://facebook.com/CromosRepes"><i class="fa fa-google-plus-square"></i> Google+</a>
+                                </li>
+                                 </ul>
+                                 </li>
 
                             </ul>
                             <!-- /.nav-second-level -->
