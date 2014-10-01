@@ -150,8 +150,6 @@
                         // Aquí se pinta el contenido que cambia en cada página
                         print $contenido
                         ?>
-                        <br/>
-                        <span class="text-right hidden-xs col-sm-12 col-md-12 col-lg-12">
                     <ins class="adsbygoogle"
                             style="display:inline-block;width:728px;height:90px"
                             data-ad-client="ca-pub-8628628791781009"
@@ -159,7 +157,6 @@
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
-                </span>
                     </div><!-- panel -->
                 <!-- </div>  container -->
             </div> <!-- row -->
