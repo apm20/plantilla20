@@ -158,6 +158,7 @@
 
          <div id="footer-ad">
             <div class="row container">
+            <br/>
                 <div class="text-right hidden-xs col-sm-12 col-md-12 col-lg-12">
                     <ins class="adsbygoogle"
                             style="display:inline-block;width:728px;height:90px"
