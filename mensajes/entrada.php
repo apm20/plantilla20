@@ -114,7 +114,7 @@ function enlaces ( $estado ) {
 	echo anchor  ('mensajes/enviados/'			,'<button class="btn btn-default"><i class="glyphicon glyphicon-send"> </i> Enviados</button>'		,array('class'=>'back'));
     
     if ( $estado == 'S' ) {
-        anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
+        echo anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
     }
     echo ('</div>');
     echo ('</div>');
