@@ -114,7 +114,7 @@ echo " ESTADO: ".$estado." - ";
 	echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
 	echo anchor  ('mensajes/enviados/'			,'<button class="btn btn-default"><i class="glyphicon glyphicon-send"> </i> Enviados</button>'		,array('class'=>'back'));
     
-    if ( strcasecmp($estado,'S')==0 ) {
+    if ( $estado == 'S' ) {
         anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
     }
     echo ('</div>');
