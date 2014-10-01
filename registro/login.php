@@ -1,5 +1,6 @@
+<center>
 <?php if( strlen($mensaje) ): ?>
-<p><?php echo $mensaje?></p>
+<?php echo $mensaje?></p>
 <?php endif; ?>
 <script type="text/javascript" src="http://www.cromosrepes.com/js/adsense.js"></script>
 
@@ -13,7 +14,7 @@
     	document.write( '<input type="hidden" name="ad" id="ad" value="0"/>');
     }
 </script>	
-<center>
+
 
 
 <div class="container">
