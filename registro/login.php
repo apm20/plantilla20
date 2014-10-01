@@ -35,7 +35,7 @@
 		    <?php if ($recuerdame==1) echo "checked"; ?> > Recuérdame
         </label>
       </div>
-      <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn-success"  />
+      <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn btn-outline btn-success"  />
     </form>
 </fieldset>
 </div>
