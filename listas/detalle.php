@@ -226,7 +226,7 @@ Truco PC: separa cromos con un punto, así puedes usar el teclado numérico con 
     <textarea class="form-control" id="notas_prv" name="notas_prv" rows=2 spellcheck="true"><?php echo $row->notas_prv; ?></textarea>
 	<?php endforeach;  ?>
 	<br/>
-	<center><input class='btn btn btn-outline btn-success' type='submit' name='btn_ok' id='btn_ok' value='Guardar notas' onclick="this.style.visibility = 'hidden';" />
+	<center><input class='btn btn btn-success' type='submit' name='btn_ok' id='btn_ok' value='Guardar notas' onclick="this.style.visibility = 'hidden';" />
    	<input class='btn btn-default' type='reset' name='btn_reset' id='btn_reset' value='Vaciar notas' onclick="this.style.visibility = 'hidden';" /></center>
     </fieldset>    
 </td></tr></table>
