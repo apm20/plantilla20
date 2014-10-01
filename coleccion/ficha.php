@@ -76,12 +76,13 @@
 					echo $col["notas"];
 ?>
 	</div><br />
+	<?php if ($cuantos>=200) { ?><br/>Solo se muestran los 200 primeros usuarios que han actualizado listas recientemente<?php } ?>
 <?php	   if ( $col["socio"] > 0 ) { echo "</strong>"; }?>
 <?php   }
    }
 } else {
 	 if ( $logado_id > 0 ) {?>
-		Todavía no hay coleccionistas, para ser el primero pincha en "Añadir a mis Colecciones"
+		Todavía no hay coleccionistas, para ser el primero pincha en "Apuntarme a esta colección"
 <?php   } else {
 		echo '<strong>'.anchor ( 'usuario/login', 'ver '.$coleccion["coleccionistas"].' listas' ).'</strong>';
 	 }
@@ -90,4 +91,4 @@
 
 <br/><br/><br/><br/>
 <br/><br/><br/><br/>
-<?php if ($cuantos>=200) { ?><br/>Solo se muestran los 200 primeros usuarios que han actualizado listas recientemente<?php } ?>
+
