@@ -86,7 +86,7 @@
 		echo '<strong>'.anchor ( 'usuario/login', 'ver '.$coleccion["coleccionistas"].' listas' ).'</strong>';
 	 }
 } ?>
-<?php if ($cuantos>=200) { ?><div>...</div><div>Solo se muestran los 200 primeros usuarios que han actualizado listas recientemente</div><?php } ?>
+<?php if ($cuantos>=200) { ?><br/>Solo se muestran los 200 primeros usuarios que han actualizado listas recientemente<?php } ?>
 
 <br/><br/><br/><br/>
 <br/><br/><br/><br/>
