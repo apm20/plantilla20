@@ -60,7 +60,7 @@
    if (isset($coleccionistas) && count($coleccionistas)>0 ) { ?>
 	<div id="hnick">Usuario</div><div id="hfal">Faltas</div><div id="hrep">Repes</div><div id="hmod">Actualizado</div><br />
 <?php foreach ( $coleccionistas as $col ){
-    if ( $cuantos<1001 ) {
+    if ( $cuantos<501 ) {
       $cuantos++;
    ?>
 <?php	  if ( $col["socio"] > 0 ) { echo "<strong>"; }?>
@@ -86,7 +86,7 @@
 		echo '<strong>'.anchor ( 'usuario/login', 'ver '.$coleccion["coleccionistas"].' listas' ).'</strong>';
 	 }
 } ?>
-<?php if ($cuantos>=1000) { ?><div>...</div><div>Solo se muestran los 1000 primeros usuarios que han actualizado listas recientemente</div><?php } ?>
+<?php if ($cuantos>=500) { ?><div>...</div><div>Solo se muestran los 500 primeros usuarios que han actualizado listas recientemente</div><?php } ?>
 
 <br/><br/><br/><br/>
 <br/><br/><br/><br/>
