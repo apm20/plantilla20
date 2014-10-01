@@ -1,5 +1,3 @@
-<h1>Iniciar sesión</h1>
-<p></p>
 <?php if( strlen($mensaje) ): ?>
 <p><?php echo $mensaje?></p>
 <?php endif; ?>
@@ -23,7 +21,7 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Please Sign In</h3>
+                        <h3 class="panel-title">Iniciar sesión</h3>
                     </div>
                     <div class="panel-body">
                         <form role="form">
@@ -56,7 +54,6 @@
 </fieldset>
 
 
-<p></p>
 <center>
 <?php echo anchor('usuario/Registro', '<button class="btn btn-primary">Registrarme</button>')?>
 <p></p>
