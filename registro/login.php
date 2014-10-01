@@ -35,14 +35,14 @@
 		    <?php if ($recuerdame==1) echo "checked"; ?> > Recuérdame
         </label>
       </div>
-      <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn btn-outline btn-success"  />
+      <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn btn-outline btn-success"  /> o <?php echo anchor('usuario/Registro', '<button class="btn btn-default"><b><i class="glyphicon glyphicon-send"> </i> Registrarme</button>')?></b>
+<?php echo anchor ('usuario/PedirPassword','<button class="btn btn-link"><i class="glyphicon glyphicon-question-sign"> </i> No puedo acceder a mi cuenta</button>')?>
     </form>
 </fieldset>
 </div>
-<div class="col-xs-12 col-sm-6 col-lg-6 text-center">
-<?php echo anchor('usuario/Registro', '<button class="btn btn-default"><b><i class="glyphicon glyphicon-send"> </i> Quiero registrarme</button>')?></b>
-<?php echo anchor ('usuario/PedirPassword','<button class="btn btn-default"><i class="glyphicon glyphicon-question-sign"> </i> No puedo acceder a mi cuenta</button>')?>
-</div>
+
+
+
 </div>
 
 
