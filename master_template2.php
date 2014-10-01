@@ -260,8 +260,8 @@
         document.getElementById("menu_usuario").innerHTML = codigo;
     } else {
         codigo =
-            '<li><a href="' + raiz + 'usuario/registro"><i class="fa fa-pencil fa-fw"></i> Nuevo usuario</a>' +
-            '<li><a href="' + raiz + 'usuario/login"><i class="fa fa-user fa-fw"></i> Entrar</a>';
+            '<li><a href="' + raiz + 'usuario/registro"><i class="fa fa-pencil fa-fw"></i> Registrarse</a>' +
+            '<li><a href="' + raiz + 'usuario/login"><i class="fa fa-user fa-fw"></i> Iniciar sesión</a>';
 
         document.getElementById("menu_usuario").innerHTML = codigo;
     }
