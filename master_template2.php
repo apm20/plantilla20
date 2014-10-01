@@ -114,11 +114,11 @@
                             <!-- /.nav-second-level -->
                         </li>
                     </ul>
-<br/>
+
                     <!-- Adsense Lateral Gordo 160x600 recomendacion ini -->
                     <div class="row text-center">
                         <div class="text-right hidden-xs col-lg-12">
-
+<br/>
                             <!-- Adsense Lateral Gordo 160x600 recomendacion inicio -->
                             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                             <ins class="adsbygoogle"
