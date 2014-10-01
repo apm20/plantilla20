@@ -106,6 +106,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <?php
 function enlaces ( $estado ) {
+echo " ESTADO ".$estado." - ";	
     echo ('<div class="btn-group-vertical ">');
     echo ('<div class="btn-group">');
 
