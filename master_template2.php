@@ -144,10 +144,10 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper" style="min-height: 862px; min-width:auto; background-color: #eee;">
+        <div id="page-wrapper" style="min-height: 862px;  background-color: #eee;">
         <div class="row">
           <div class="container" >
-          <div class="panel" style="margin-top:40px; margin-bottom:40px; padding: 20px 20px 20px 20px;" >
+          <div class="panel-body" style="margin-top:40px; margin-bottom:40px; padding: 20px 20px 20px 20px;" >
                         <?php
                         // Aquí se pinta el contenido que cambia en cada página
                         print $contenido
