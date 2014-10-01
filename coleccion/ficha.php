@@ -86,6 +86,8 @@
 		echo '<strong>'.anchor ( 'usuario/login', 'ver '.$coleccion["coleccionistas"].' listas' ).'</strong>';
 	 }
 } ?>
+
+
+<br/><br/><br/><br/>
+<br/><br/><br/><br/>
 <?php if ($cuantos>=200) { ?><br/>Solo se muestran los 200 primeros usuarios que han actualizado listas recientemente<?php } ?>
-
-
