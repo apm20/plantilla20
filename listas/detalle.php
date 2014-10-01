@@ -109,7 +109,7 @@
     <td>
 <b>Faltas </b>
 <?php if ($visitante == false) { ?>
- 	<button class="pull-right btn btn-default btn-xs"><?php echo  anchor  ( "listas/marcar/faltas/".$coleccion->id, 'Modificar tus faltas', array('class'=>'back') )  ?></button>
+ <?php echo  anchor  ( "listas/marcar/faltas/".$coleccion->id, '	<button class="pull-right btn btn-default btn-xs">Modificar tus faltas</button>', array('class'=>'back') )  ?>
 <?php  } ?>
 </td></tr></thead>
 <tr><td>
@@ -135,7 +135,7 @@
     <td>
 <b>Repes </b> 
 <?php if ($visitante == false) { ?>
-	<button class="pull-right btn btn-default btn-xs"><?php echo  anchor  ( "listas/marcar/repes/".$coleccion->id, 'Modificar tus repes', array('class'=>'back') )?></button>
+<?php echo  anchor  ( "listas/marcar/repes/".$coleccion->id, '	<button class="pull-right btn btn-default btn-xs">Modificar tus repes</button>', array('class'=>'back') )?>
 <?php  } ?>
 </td></tr></thead>
 <tr><td>
