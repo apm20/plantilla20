@@ -146,7 +146,9 @@ function enlaces ( $estado ) {
     if ( $estado == 'S' ) echo 'class="active"';
     echo '>'.anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-danger"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
     echo '</li>';
-    
+    echo '</ul>';		
+    echo '</div>';
+
     
 /*    
     
@@ -164,8 +166,6 @@ function enlaces ( $estado ) {
 		echo '  '.anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-danger"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
 */
 
-echo '</ul>';		
-echo "</div>";
 }		
 ?>
 
