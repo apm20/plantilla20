@@ -66,7 +66,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         ?>
         </td><td>
         
-        <input type="button" class="btn btn-default btn-xs" name="<?php echo $row["id"]?>" value="X" title="Eliminar mensaje">
+        <button type="button" class="btn btn-warning btn-circle btn-xs" name="<?php echo $row["id"]?>" title="Eliminar mensaje"><i class="fa fa-times"></i></button>
 		<?php $cuantos ++; ?>
         </td></tr>
     <?php if ( $row["leido"]=='0' ) echo "</strong>" ?>        
