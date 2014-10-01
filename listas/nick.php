@@ -25,6 +25,13 @@ if ($finalizadas== 0) {
 <?php	}
 } else {
 ?>
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active " > <a href="#">Activas</a> </li>
+   
+  <li > <a href="#">Finalizadas</a>  </li>
+
+</ul>
+
 <div align="center">
 <table class="table table-bordered table-hover">
 <thead>
