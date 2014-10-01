@@ -142,10 +142,6 @@ function enlaces ( $estado ) {
     if ( $estado == 'S' ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/S'		,'<i class="glyphicon glyphicon-ban-circle"> </i> No deseado',array('class'=>'back'));
     echo '</li>';
-    echo '<li ';
-    if ( $estado == 'S' ) echo 'class="active"';
-    echo '>'.anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-danger"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
-    echo '</li>';
     echo '</ul>';		
     echo '</div>';
 
