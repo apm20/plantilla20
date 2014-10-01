@@ -2,58 +2,36 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
-<h1><i class='fa fa-envelope-o'><small></i><?php echo $title ?></small></h1>
+<h1><?php echo $title ?></h1>
 Aqu&iacute; puedes escribir nuevos mensajes y ver quien te ha escrito.
 <p></p>
-<div class="text-center">
- <div class="btn-group-vertical ">
-  <div class="btn-group">
-   <p>
-        <?php echo  anchor("mensajes/entrada/0/0" ,
-                "<button class='btn btn-default btn-block'><i class='fa pull-left fa-inbox'></i> <span class='pull-left'>".
-                "Buz&oacute;n de entrada ".$estilo_class->PintaPendientes ($pendientes).
-                "</span></button>",
-		'title="Aqu&iacute; llegan todos los mensajes que te escriban"') ?>
-   </p><p>
-        <?php echo  anchor("mensajes/entrada/0/2" ,
-        "<button class='btn btn-default btn-block'><i class='fa pull-left fa-comments-o'></i> <span class='pull-left'>".
-        "Carpeta Negociando ".
-        "</span></button>",
-  		'title="Aqu&iacute; puedes guardar mensajes que te interese negociar"' ) ?>
-   </p><p>
-        <?php echo  anchor("mensajes/entrada/0/4" ,
-        "<button class='btn btn-default btn-block'><i class='fa pull-left fa-clock-o'></i> <span class='pull-left'>".
-        "Carpeta Esperando ".
-        "</span></button>",
-  		'title="Aqu&iacute; puedes guardar mensajes de env&iacute;os que estes esperando a que te lleguen"' ) ?>
-   </p><p>
-        <?php echo  anchor("mensajes/enviados"    ,
-        "<button class='btn btn-default btn-block'><i class='fa pull-left fa-send'></i> <span class='pull-left'>".
-        "Enviados".
-        "</span></button>",
-  		'title="Aqu&iacute; puedes consultar los mensajes que has enviado a otros usuarios"' ) ?>
-   </p><p>
-        <?php echo  anchor("mensajes/entrada/0/1" ,
-        "<button class='btn btn-default btn-block'><i class='fa pull-left fa-remove'></i> <span class='pull-left'>".
-        "Borrados".
-        "</span></button>",
-  		'title="Aqu&iacute; puedes encontrar mensajes que borraste, por si quieres recuperarlos"' ) ?>
-   </p><p>
-        <?php echo  anchor("mensajes/entrada/0/S" ,
-        "<button class='btn btn-default btn-block'><i class='fa pull-left fa-trash'></i> <span class='pull-left'>".
-        "Correo no deseado".
-        "</span></button>",
-  		'title="Aqu&iacute; se archivan los mensajes que te han enviado los usuarios de tu lista negra"' ) ?>
-   </p><p>
-        <?php echo  anchor("seleccion/buscar/mensajes"  ,
-        "<button class='btn btn-default btn-block'><i class='fa pull-left fa-plus'></i> <span class='pull-left'>".
-        "Escribir nuevo mensaje".
-        "</span></button>",
+
+		 <?php echo  anchor("mensajes/entrada/0/0" ,"<button class='btn btn-default'><i class='fa fa-inbox'> </i> Buz&oacute;n de entrada </button>".$estilo_class->PintaPendientes ($pendientes),
+			'title="Aqu&iacute; puedes guardar mensajes que te interese negociar"') ?><p></p>
+				
+
+		<?php echo  anchor("mensajes/entrada/0/2" ,"<button class='btn btn-default'><i class='fa fa-transfer'> </i> Carpeta negociando </button>",
+  		'title="Aqu&iacute; puedes guardar mensajes que te interese negociar"' ) ?><p></p>
+
+
+		<?php echo  anchor("mensajes/entrada/0/4" ,"<button class='btn btn-default'><i class='fa fa-time'> </i> Carpeta Esperando </button>",
+  		'title="Aqu&iacute; puedes guardar mensajes de env&iacute;os que estes esperando a que te lleguen"' ) ?><p></p>
+
+		<?php echo  anchor("mensajes/enviados"    ,"<button class='btn btn-default'><i class='fa fa-send'> </i> Enviados</button>" ,
+  		'title="Aqu&iacute; puedes consultar los mensajes que has enviado a otros usuarios"' ) ?><p></p>
+
+		<?php echo  anchor("mensajes/entrada/0/1" ,"<button class='btn btn-default'><i class='fa fa-remove'> </i> Borrados</button>" ,
+  		'title="Aqu&iacute; puedes encontrar mensajes que borraste, por si quieres recuperarlos"' ) ?><p></p>
+
+
+		<?php echo  anchor("mensajes/entrada/0/S" ,"<button class='btn btn-default'><i class='fa fa-ban-circle'> </i> Correo no deseado</button>" ,
+  		'title="Aqu&iacute; se archivan los mensajes que te han enviado los usuarios de tu lista negra"' ) ?><p></p>
+
+
+		<?php echo  anchor("seleccion/buscar/mensajes"  ,"<button class='btn btn-default'><i class='fa fa-plus'> </i> Escribir nuevo mensaje</button>" ,
   		'title="Escribe un nuevo mensaje al usuario que desees"' ); ?>
-   </p>
-  </div>
- </div>
-</div>
+</button></p>
+
 <?php $socio=$sesion["ses_socio"]; ?>
 
 <?php if ( $socio <= 2 ) { ?>
