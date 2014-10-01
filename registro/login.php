@@ -1,10 +1,12 @@
 <h1>Iniciar sesión</h1>
 <p></p>
-<center>
+
 <?php if( strlen($mensaje) ): ?>
 <p><?php echo $mensaje?></p>
 <?php endif; ?>
 <script type="text/javascript" src="http://www.cromosrepes.com/js/adsense.js"></script>
+<center>
+
 <div class="row text-center">
 
 
@@ -39,7 +41,7 @@
 </fieldset>
 </div>
 
-<button class="btn btn-default"><?php echo anchor('usuario/Registro', 'Quiero registrarme')?></button>
+<?php echo anchor('usuario/Registro', '<button class="btn btn-primary">Registrarme</button>')?>
 <?php echo anchor ('usuario/PedirPassword','<button class="btn btn-link"><i class="glyphicon glyphicon-question-sign"> </i> No puedo acceder a mi cuenta</button>')?>
 
 
