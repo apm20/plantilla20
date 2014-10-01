@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
-<h1><i class='fa fa-envelope-o'><small></i><?php echo $title ?></small></h1>
+<h1><i class='fa fa-envelope-o'></i> <?php echo $title ?></h1>
 Aqu&iacute; puedes escribir nuevos mensajes y ver quien te ha escrito.
 <p></p>
 <div class="text-center">
