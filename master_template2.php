@@ -126,7 +126,6 @@
                                  style="display:inline-block;width:160px;height:600px;border-style:none;"
                                  data-ad-client="ca-pub-8628628791781009"
                                  data-ad-slot="4084331826"></ins>
-                                 <br/>
                             <script>
                             (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
