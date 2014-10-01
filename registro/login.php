@@ -16,13 +16,13 @@
     }
 </script>	
 
-<div class="input-group input-group col-md-3">
-  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+<div class="input-group col-md-3">
+  
   <input type="text" name="nick" id="nick" class="form-control" placeholder="Usuario" onclick="this.focus();this.select()" 
         	value="<?php echo $nick ?>" /></td><td><?php echo form_error('nick')?>
 </div>
-<div class="input-group input-group col-md-3">
-  <span class="input-group-addon"><i class="fa fa-lock"> </i></span>
+<div class="input-group col-md-3">
+  
   <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" onclick="this.focus();this.select()" 
         	value="<?php echo $password?>" /><td><?php echo form_error('password')?>
 </div>
