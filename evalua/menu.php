@@ -14,7 +14,7 @@ Información: Si llegas a 100 evaluaciones se borrar&aacute;n las m&aacute;s ant
 <p></p>Si pusiste una evaluaci&oacute;n negativa y quieres rectificarla, haz una evaluaci&oacute;n positiva y la negativa desaparecer&aacute;.
 <p></p><button class="btn btn-default btn-circle">
 <i class="fa fa-user"></i></button> <?php echo  anchor('evalua/recibidas/'.$sesion["ses_nick_mostrar"]	,"Ver tus &uacute;ltimas Evaluaciones Recibidas") ?>
-<p></p><?php echo  anchor('evalua/emitidas/'.$sesion["ses_usuario_id"]	,"<button class="btn btn-default"> Ultimas Evaluaciones Emitidas</button>") ?>
+<p></p><?php echo  anchor('evalua/emitidas/'.$sesion["ses_usuario_id"]	,"<button class='btn btn-default'> Ultimas Evaluaciones Emitidas</button>") ?>
 <p></p><button class="btn btn-default"><?php echo  anchor('seleccion/buscar/evalua'	,"Emitir Nueva Evaluación") ?></button>
 <p></p>Tienes <strong><style="font_size:big"><?php echo $total_pos; ?></style></strong> puntos positivos y
 <?php if ($total_neg < 0) {?>
