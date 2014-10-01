@@ -1,5 +1,6 @@
 <h1>Iniciar sesión</h1>
 <p></p>
+<center>
 <?php if( strlen($mensaje) ): ?>
 <p><?php echo $mensaje?></p>
 <?php endif; ?>
@@ -40,7 +41,8 @@
 </fieldset>
 </div>
 
-<button class="btn btn-default"><b><i class="glyphicon glyphicon-send"> </i> <?php echo anchor('usuario/Registro', 'No tengo cuenta. Quiero registrarme')?></b></button>
-<button class="btn btn-default"><i class="glyphicon glyphicon-question-sign"> </i> <?php echo anchor ('usuario/Pedirerdo mi usuaPassword','No puedo acceder a mi cuenta')?></button>
+<button class="btn btn-default"><?php echo anchor('usuario/Registro', 'Quiero registrarme')?></button>
+<button class="btn btn-default"><i class="glyphicon glyphicon-question-sign"> </i> <?php echo anchor ('usuario/PedirPassword','No puedo acceder a mi cuenta')?></button>
 
 
+</center>
