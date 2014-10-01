@@ -1,0 +1,65 @@
+/* Ajustes del menÃº superior y lateral 
+ * 29/09/2014 +++paco sidebar ancho: hacemos la barra lateral izquierda mÃ¡s pequeÃ±a de 250 a 200
+ * 29/09/2014 +++paco logo alto    : hacemos el logo mÃ¡s alto 
+*/
+
+.navbar-top-links li a {
+/* botones menu superior */
+    color: #FFF;
+}
+
+.navbar-default .navbar-brand {
+/* titulo */
+    color: #FFF;
+}
+
+.navbar-static-top {
+/* barra superior */
+    background-color: #DF9B44;
+}
+
+.navbar-toggle {
+/* boton triple barra */
+    background-color: #FFF;
+}
+
+.nav > li > a:hover  {
+/* menu superior y lateral */
+   color: #000;
+   background-color: #F2F2F2;
+}
+
+.dropdown-menu li a{
+/* menu desplegable usuario */
+   color: #000;	
+}
+
+.dropdown-toggle:focus {
+/* menu desplegable seleccionado */
+   color: #000;    
+}
+
+.navbar-brand {
+    height:    50px; /* mÃ¡s alto */
+    padding:   10px; /* distancia del logo a la esquina superior izquierda */
+    margin-left:-4px;
+    font-size: 15px; /* tamaÃ±o de la letra al lado del logo */
+    
+}
+
+@media(min-width:768px) {
+	#page-wrapper {
+		margin: 0 0 0 187px; /* idem .sidebar {width} */
+	}
+}
+@media(min-width:768px) {
+	.sidebar {
+	     width:      187px;  /* idem #page-wrapper {margin} */
+	     margin-top:  51px;  /* Alto de navbar-brand+1 */
+	}
+}
+
+.h1 {
+	color: #E4621B;
+	border-bottom: 2px solid #E4621B;
+}
