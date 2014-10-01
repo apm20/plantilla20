@@ -34,7 +34,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </center>
 
 <?php }?>
-<h1><small><i class='fa fa-envelope-o'></i> <?php echo $title ?></small></h1>
+<h1><i class='fa fa-envelope-o'></i> <?php echo $title ?></h1>
 <?php enlaces( $estado ); ?>
 <p></p>
 <center>
