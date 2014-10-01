@@ -114,7 +114,7 @@ echo " ESTADO ".$estado." - ";
 	echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
 	echo anchor  ('mensajes/enviados/'			,'<button class="btn btn-default"><i class="glyphicon glyphicon-send"> </i> Enviados</button>'		,array('class'=>'back'));
     
-    if ( $estado == 'S' ) {
+    if ( strcasecmp($estado,'S')==0 ) {
         anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
     }
     echo ('</div>');
@@ -140,7 +140,7 @@ echo " ESTADO ".$estado." - ";
     echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="glyphicon glyphicon-remove"> </i> Borrados',array('class'=>'back'));
     echo '</li>';
     echo '<li ';
-    if ( $estado == 'S' ) echo 'class="active"';
+    if ( $estado== S ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/S'		,'<i class="glyphicon glyphicon-ban-circle"> </i> No deseado',array('class'=>'back'));
     echo '</li>';
     echo '</ul>';		
