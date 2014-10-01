@@ -106,16 +106,19 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <?php
 function enlaces ( $estado ) {
+    echo ('<div class="btn-group-vertical ">');
     echo ('<div class="btn-group">');
 
-    echo anchor  ('mensajes/menu/'		,'<button class="btn btn-default btn-block"><i class="glyphicon glyphicon-chevron-left"> </i> Volver</button>'		,array('class'=>'back')).'  '.
-    echo anchor  ('seleccion/buscar/mensajes','<button class="btn btn-success btn-block"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).'  '.
-    echo anchor  ('mensajes/enviados/'	,'<button class="btn btn-default btn-block"><i class="glyphicon glyphicon-send"> </i> Enviados</button>'		,array('class'=>'back'));
+    echo anchor  ('mensajes/menu/'				,'<button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> Volver</button>'		,array('class'=>'back')).' ';
+	echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
+	echo anchor  ('mensajes/enviados/'			,'<button class="btn btn-default"><i class="glyphicon glyphicon-send"> </i> Enviados</button>'		,array('class'=>'back'));
     
     if ( $estado == 'S' ) {
-        anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default btn-block"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
+        anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
     }
     echo ('</div>');
+    echo ('</div>');
+    echo ('<hr />');
 
     echo "<div class='row'>";
     echo '<ul class="nav nav-tabs" role="tablist">';
