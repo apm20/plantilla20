@@ -5,9 +5,9 @@
 <h1><?php echo $title ?></h1>
 Aqu&iacute; puedes escribir nuevos mensajes y ver quien te ha escrito.
 <p></p>
-<p><button class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Aquí llegan todos los mensajes que te escriban">
-		<i class="glyphicon glyphicon-inbox"> </i> <?php echo  anchor("mensajes/entrada/0/0" ,"Buz&oacute;n de entrada ".$estilo_class->PintaPendientes ($pendientes)) ?>
-</button></p>
+<p>
+		<i class="glyphicon glyphicon-inbox"> </i> <?php echo  anchor("mensajes/entrada/0/0" ,"<button class='btn btn-default'>Buz&oacute;n de entrada </button>".$estilo_class->PintaPendientes ($pendientes),
+			'title="Aqu&iacute; puedes guardar mensajes que te interese negociar"') ?></p>
 				
 <p><button class="btn btn-default">
 		<i class="glyphicon glyphicon-transfer"> </i> <?php echo  anchor("mensajes/entrada/0/2" ,"Carpeta Negociando ",
