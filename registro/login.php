@@ -31,16 +31,14 @@
                     <div class="panel-body">
                         <form role="form">
                             <fieldset>
-                                <div class="input-group">
-      <span class="input-group-addon"><i class="fa fa-user"></i></span>
-      <input type="text" name="nick" id="nick" class="form-control" placeholder="Usuario" onclick="this.focus();this.select()" 
+                                <div class="form-group">
+                                    <input type="text" name="nick" id="nick" class="form-control" placeholder="Usuario" onclick="this.focus();this.select()" 
         	    value="<?php echo $nick ?>" /></td><td><?php echo form_error('nick')?>
-    </div>
-                                <div class="input-group">
-      <span class="input-group-addon"><i class="fa fa-lock"> </i></span>
-      <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" onclick="this.focus();this.select()" 
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" onclick="this.focus();this.select()" 
         	    value="<?php echo $password?>" /><td><?php echo form_error('password')?>
-    </div>
+                                </div>
                                <div class="checkbox">
         <label>
           <input type="checkbox"name="recuerdame" value="1"
