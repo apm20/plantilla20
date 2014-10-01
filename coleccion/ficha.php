@@ -50,10 +50,10 @@
 	}
 ?>
 
- <?php echo anchor("coleccion/unirse/".$coleccion["esc_nombre"],"<button class='btn btn-success'><strong>  <i class='glyphicon glyphicon-plus-sign'></i> Apuntarme a la colección</strong></button>") ?>
-<button class="btn btn-default"><i class="glyphicon glyphicon-link"></i> <?php echo anchor( 'enlaces/coleccion/'.$coleccion["id"],"Enlaces") ?></button>
-<button class="btn btn-default"><i class="glyphicon glyphicon-zoom-in"></i> <?php echo anchor("coleccion/buscados/".$coleccion["esc_nombre"],"Los más buscados")?></button>
-<button class="btn btn-default"><i class="glyphicon glyphicon-random"></i> <?php echo anchor("wiki/coleccion/".$coleccion["id"],"Recomendar")?></button>
+ <?php echo anchor("coleccion/unirse/".$coleccion["esc_nombre"],"<button class='btn btn-success'><strong>  <i class='fa fa-plus-sign'></i> Apuntarme a la colección</strong>") ?>
+<?php echo anchor( "enlaces/coleccion/".$coleccion["id"],"<button class='btn btn-default'><i class='fa fa-link'></i> Enlaces</button>") ?>
+<?php echo anchor("coleccion/buscados/".$coleccion["esc_nombre"],"<button class='btn btn-default'><i class='fa fa-zoom-in'></i> Los más buscados</button>")?>
+<?php echo anchor("wiki/coleccion/".$coleccion["id"],"<button class='btn btn-default'><i class='fa fa-random'></i> Recomendar</button>")?>
 
 <br /><br />
 <?php $cuantos=0;
