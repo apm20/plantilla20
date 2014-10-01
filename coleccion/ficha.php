@@ -50,9 +50,9 @@
 	}
 ?>
 
- <?php echo anchor("coleccion/unirse/".$coleccion["esc_nombre"],"<button class='btn btn-success'><strong>  <i class='fa fa-plus-sign'></i> Apuntarme a la colección</strong>") ?>
+ <?php echo anchor("coleccion/unirse/".$coleccion["esc_nombre"],"<button class='btn btn-success'><strong>  <i class='fa fa-plus'></i> Apuntarme a la colección</strong>") ?>
 <?php echo anchor( "enlaces/coleccion/".$coleccion["id"],"<button class='btn btn-default'><i class='fa fa-link'></i> Enlaces</button>") ?>
-<?php echo anchor("coleccion/buscados/".$coleccion["esc_nombre"],"<button class='btn btn-default'><i class='fa fa-zoom-in'></i> Los más buscados</button>")?>
+<?php echo anchor("coleccion/buscados/".$coleccion["esc_nombre"],"<button class='btn btn-default'><i class='fa fa-search-plus'></i> Los más buscados</button>")?>
 <?php echo anchor("wiki/coleccion/".$coleccion["id"],"<button class='btn btn-default'><i class='fa fa-random'></i> Recomendar</button>")?>
 
 <br /><br />
