@@ -4,7 +4,7 @@
 <p><?php echo $mensaje?></p>
 <?php endif; ?>
 <script type="text/javascript" src="http://www.cromosrepes.com/js/adsense.js"></script>
-<center>
+
 <fieldset>
 	<form  method="post">
 	
@@ -15,14 +15,13 @@
     	document.write( '<input type="hidden" name="ad" id="ad" value="0"/>');
     }
 </script>	
-<div class="col-md-3">
+<center><div class="col-md-3">
 <div class="form-group">
   
   <input type="text" name="nick" id="nick" class="form-control" placeholder="Usuario" autofocus onclick="this.focus();this.select()" 
         	value="<?php echo $nick ?>" /></td><td><?php echo form_error('nick')?>
         	
         	</div>
-        	<br/>
   <div class="form-group">
   <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" onclick="this.focus();this.select()" 
         	value="<?php echo $password?>" /><td><?php echo form_error('password')?>
@@ -37,7 +36,7 @@
   
   
   <input type="submit" name="submit" id="submit" value="Iniciar sesión" class="btn btn-success btn-lg btn-outline"  />
-</div>
+</div></center>
 <p></p>
 
 	
@@ -48,7 +47,7 @@
 
 
 <p></p>
-
+<center>
 <?php echo anchor('usuario/Registro', '<button class="btn btn-primary">Registrarme</button>')?>
 <p></p>
 
