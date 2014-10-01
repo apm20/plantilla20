@@ -106,7 +106,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <?php
 function enlaces ( $estado ) {
-echo " ESTADO ".$estado." - ";	
+echo " ESTADO: ".$estado." - ";	
     echo ('<div class="btn-group-vertical ">');
     echo ('<div class="btn-group">');
 
@@ -124,7 +124,7 @@ echo " ESTADO ".$estado." - ";
     echo "<div class='row'>";
     echo '<ul class="nav nav-tabs" role="tablist">';
     echo '<li ';
-    if ( $estado == 0 ) echo 'class="active"';
+    if ( intval($estado) == 0 ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/0'		,'<i class="glyphicon glyphicon-inbox"></i> Buzón de entrada',array('class'=>'back')); 
     echo '</li>';
     echo '<li ';
@@ -140,7 +140,7 @@ echo " ESTADO ".$estado." - ";
     echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="glyphicon glyphicon-remove"> </i> Borrados',array('class'=>'back'));
     echo '</li>';
     echo '<li ';
-    if ( $estado== S ) echo 'class="active"';
+    if ( strcasecmp($estado,'S')==0 ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/S'		,'<i class="glyphicon glyphicon-ban-circle"> </i> No deseado',array('class'=>'back'));
     echo '</li>';
     echo '</ul>';		
