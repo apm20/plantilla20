@@ -109,7 +109,7 @@
     <td>
 <b>Faltas </b>
 <?php if ($visitante == false) { ?>
- <?php echo  anchor  ( "listas/marcar/faltas/".$coleccion->id, '	<button class="pull-right btn btn btn-outline btn-primary btn-xs">Modificar tus faltas</button>', array('class'=>'back') )  ?>
+ <?php echo  anchor  ( "listas/marcar/faltas/".$coleccion->id, '	<button class="pull-right btn btn btn-outline btn-danger btn-xs">Modificar tus faltas</button>', array('class'=>'back') )  ?>
 <?php  } ?>
 </td></tr></thead>
 <tr><td>
@@ -135,7 +135,7 @@
     <td>
 <b>Repes </b> 
 <?php if ($visitante == false) { ?>
-<?php echo  anchor  ( "listas/marcar/repes/".$coleccion->id, '	<button class="pull-right btn btn-outline btn-primary btn-xs">Modificar tus repes</button>', array('class'=>'back') )?>
+<?php echo  anchor  ( "listas/marcar/repes/".$coleccion->id, '	<button class="pull-right btn btn-outline btn-danger btn-xs">Modificar tus repes</button>', array('class'=>'back') )?>
 <?php  } ?>
 </td></tr></thead>
 <tr><td>
@@ -241,7 +241,7 @@ Truco PC: separa cromos con un punto, así puedes usar el teclado numérico con 
 function enlaces( $visitante,$coleccion,$autor,$p_nick,$p_id ) {
 	
 	if ($visitante == false) {
-	 echo "  <b>".anchor  ( "buscador/coleccion/".$p_id."/".$coleccion->id, '<button class="btn btn-primary"><i class="fa fa-transfer"> </i> Buscar quien tiene mis faltas</button>' 	, array('class'=>'back') );
+	 echo "  <b>".anchor  ( "buscador/coleccion/".$p_id."/".$coleccion->id, '<button class="btn btn-primary"><i class="fa fa-exchange"> </i> Buscar quien tiene mis faltas</button>' 	, array('class'=>'back') );
 	 echo "</b> ".anchor( "coleccion/borrarlista/".$coleccion->esc_nombre,'<button class="btn btn-default"><i class="fa fa-remove"> </i> Eliminar la lista</button>');
 	 if ($autor == 1 )
 	 	echo "  ".anchor  ( "wiki/coleccion/".$coleccion->id, ' <button class="btn btn-default">Wiki</button>' 	, array('class'=>'back') );
