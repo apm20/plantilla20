@@ -130,10 +130,9 @@ if ($finalizadas== 0) {
 function enlaces( $link_back, $nick_mostrar, $p_visitante  ) {?>
 <button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> <?php echo $link_back;?></button>
 
-<button class="btn btn-default"><?php if ($p_visitante)
-		echo " <strong> ".anchor("mensajes/nuevo/".$nick_mostrar, " Enviar Mensaje</strong>");
-		else
-		echo " <strong> ".anchor("colecciones/todas/".$nick_mostrar, " Apúntate a una colección</strong>");
+<?php if ($p_visitante)
+		echo " <strong> ".anchor("mensajes/nuevo/".$nick_mostrar, "<button class='btn btn-default'> Enviar Mensaje</button></strong>");
+		
 	
 }
-?></button>
+?>
