@@ -34,7 +34,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </center>
 
 <?php }?>
-<h1><?php echo $title ?></h1>
+<h1><i class='fa fa-envelope-o'></i><?php echo $title ?></h1>
 <?php enlaces( $estado ); ?>
 <p></p>
 <center>
@@ -111,7 +111,7 @@ function enlaces ( $estado ) {
 
     echo anchor  ('mensajes/menu/'				,'<button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> Volver</button>'		,array('class'=>'back')).' ';
 	echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
-	echo anchor  ('mensajes/enviados/'			,'<button class="btn btn-default"><i class="glyphicon glyphicon-send"> </i> Enviados</button>'		,array('class'=>'back'));
+	echo anchor  ('mensajes/enviados/'			,'<button class="btn btn-default"><i class="glyphicon glyphicon-send"> </i> Enviados</button>'		,array('class'=>'back')).' ';
     
     if ( $estado == 'S' ) {
         echo anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
@@ -124,23 +124,23 @@ function enlaces ( $estado ) {
     echo '<ul class="nav nav-tabs" role="tablist">';
     echo '<li ';
     if ( $estado == '0' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/0'		,'<i class="glyphicon glyphicon-inbox"></i> Buzón de entrada',array('class'=>'back')); 
+    echo '>'.anchor('mensajes/entrada/0/0'		,'<i class="fa fa-inbox"></i> Buzón de entrada',array('class'=>'back')); 
     echo '</li>';
     echo '<li ';
     if ( $estado == '2' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/2'		,'<i class="glyphicon glyphicon-transfer"> </i> Negociando',array('class'=>'back'));	
+    echo '>'.anchor('mensajes/entrada/0/2'		,'<i class="fa fa-comments-o glyphicon-transfer"> </i> Negociando',array('class'=>'back'));	
     echo '</li>';
     echo '<li ';
     if ( $estado == '4' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/4'		,'<i class="glyphicon glyphicon-time"> </i> Esperando',array('class'=>'back'));
+    echo '>'.anchor('mensajes/entrada/0/4'		,'<i class="fa fa-clock-o"> </i> Esperando',array('class'=>'back'));
     echo '</li>';
     echo '<li ';
     if ( $estado == '1' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="glyphicon glyphicon-remove"> </i> Borrados',array('class'=>'back'));
+    echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="fa fa-remove"> </i> Borrados',array('class'=>'back'));
     echo '</li>';
     echo '<li ';
     if ( $estado == 'S' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/S'		,'<i class="glyphicon glyphicon-ban-circle"> </i> No deseado',array('class'=>'back'));
+    echo '>'.anchor('mensajes/entrada/0/S'		,'<i class="fa fa-trash"> </i> No deseado',array('class'=>'back'));
     echo '</li>';
     echo '</ul>';		
     echo '</div>';
