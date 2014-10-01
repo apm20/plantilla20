@@ -1,4 +1,4 @@
-<h1><button class="btn btn-default btn-circle"><i class="fa fa-exchange"></i></button><small> Mis Evaluaciones <?php echo $reputa; ?><small></h1>
+<h1><i class="fa fa-exchange"></i><small> Mis Evaluaciones <?php echo $reputa; ?><small></h1>
 <p>
   <?php if ( $total_pos >90 && $socio == 0 ) {?>
 Información: Si llegas a 100 evaluaciones se borrar&aacute;n las m&aacute;s antiguas de seis meses.</p>
@@ -12,9 +12,8 @@ Información: Si llegas a 100 evaluaciones se borrar&aacute;n las m&aacute;s ant
 <p> </p>Información:	Al principio como tienes pocas evaluaciones, estás obligado a hacer primero tus envíos, no te preocupes, es una buena forma de ganarte la confianza de toda la comunidad.
 <?php } ?>
 <p></p>Si pusiste una evaluaci&oacute;n negativa y quieres rectificarla, haz una evaluaci&oacute;n positiva y la negativa desaparecer&aacute;.
-<p></p><button class="btn btn-default btn-circle">
-<i class="fa fa-user"></i></button> <?php echo  anchor('evalua/recibidas/'.$sesion["ses_nick_mostrar"]	,"Ver tus &uacute;ltimas Evaluaciones Recibidas") ?>
-<p></p><?php echo  anchor('evalua/emitidas/'.$sesion["ses_usuario_id"]	,"<button class='btn btn-default'><i class='fa fa-users'></i> Ultimas Evaluaciones Emitidas</button>") ?>
+<p></p><?php echo  anchor('evalua/recibidas/'.$sesion["ses_nick_mostrar"],"<button class="btn btn-default btn-circle"><i class="fa fa-user"></i></button> Ver tus &uacute;ltimas Evaluaciones Recibidas") ?>
+<p></p><?php echo  anchor('evalua/emitidas/'.$sesion["ses_usuario_id"]	,"<button class='btn btn-default'><i class='fa fa-users'></i></button> Ultimas Evaluaciones Emitidas") ?>
 <p></p><?php echo  anchor('seleccion/buscar/evalua'	,"<button class='btn btn-default btn-circle'><i class='fa fa-plus'></i></button> Emitir Nueva Evaluación") ?></button>
 <p></p>Tienes <strong><style="font_size:big"><?php echo $total_pos; ?></style></strong> puntos positivos y
 <?php if ($total_neg < 0) {?>
