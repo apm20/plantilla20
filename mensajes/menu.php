@@ -41,7 +41,7 @@ Aqu&iacute; puedes escribir nuevos mensajes y ver quien te ha escrito.
 </div>
 <?php $socio=$sesion["ses_socio"]; ?>
 
-<?php if ( $socio <= 2 ) { ?>
+<?php /* if ( $socio <= 2 ) { ?>
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Rectangulo grande -->
@@ -52,7 +52,7 @@ Aqu&iacute; puedes escribir nuevos mensajes y ver quien te ha escrito.
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<?php  } ?>
+<?php  } */ ?>
 
 <?php
 function PintaBoton ( $url, $icono, $texto, $title ) {
