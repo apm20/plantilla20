@@ -125,17 +125,11 @@ if ($finalizadas== 0) {
 </table>
 </div>
 <?php } ?>
-<?php echo  enlaces( $link_back, $finalizadas, $usuario->nick_mostrar, $visitante  ) ?>
+<?php echo  enlaces( $link_back, $usuario->nick_mostrar, $visitante  ) ?>
 <?php
-function enlaces( $link_back, $finalizadas, $nick_mostrar, $p_visitante  ) {?>
+function enlaces( $link_back, $nick_mostrar, $p_visitante  ) {?>
 <button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> <?php echo $link_back;?></button>
-<button class="btn btn-default"><?php  if ($finalizadas== 0)
 
-	  echo "<b>".anchor("listas/finalizadas/".$nick_mostrar," Ver las colecciones finalizadas")."</b>"	 ;
-    else
-	  echo "<b>".anchor("listas/nick/".$nick_mostrar,"Ver las colecciones activas")."</b>";
-
-?></button>
 <button class="btn btn-default"><?php if ($p_visitante)
 		echo " <strong> ".anchor("mensajes/nuevo/".$nick_mostrar, " Enviar Mensaje</strong>");
 		else
