@@ -41,7 +41,7 @@
 </div>
 <div class="col-xs-12 col-sm-6 col-lg-6 text-center">
 <button class="btn btn-default"><b><i class="glyphicon glyphicon-send"> </i> <?php echo anchor('usuario/Registro', 'No tengo cuenta. Quiero registrarme')?></b></button>
-<button class="btn btn-default"><i class="glyphicon glyphicon-question-sign"> </i> <?php echo anchor ('usuario/PedirPassword','No recuerdo mi usuario o mi contraseña')?></button>
-<button class="btn btn-default"><i class="glyphicon glyphicon-envelope"> </i> <?php echo anchor('usuario/PedirPassword', 'No he recibido el mensaje de activación')?></button>
+<button class="btn btn-default"><i class="glyphicon glyphicon-question-sign"> </i> <?php echo anchor ('usuario/Pedirerdo mi usuaPassword','No puedo acceder a mi cuenta')?></button>
+
 </div>
 </div>
