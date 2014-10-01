@@ -131,7 +131,7 @@ function enlaces( $link_back, $nick_mostrar, $p_visitante  ) {?>
 <button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> <?php echo $link_back;?></button>
 
 <?php if ($p_visitante)
-		echo " <strong> ".anchor("mensajes/nuevo/".$nick_mostrar, "<button class='btn btn-default'> Enviar Mensaje</button></strong>");
+		echo anchor("mensajes/nuevo/".$nick_mostrar, "<button class='btn btn-default'><strong> Enviar Mensaje</strong></button>");
 		
 	
 }
