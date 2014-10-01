@@ -1,4 +1,4 @@
-<h1><small><i class="fa fa-exchange active"></i> Mis Evaluaciones <?php echo $reputa; ?></small></h1>
+<h1><i class="fa fa-exchange active"></i> Mis Evaluaciones <?php echo $reputa; ?></h1>
 <p>
   <?php if ( $total_pos >90 && $socio == 0 ) {?>
 Información: Si llegas a 100 evaluaciones se borrar&aacute;n las m&aacute;s antiguas de seis meses.</p>
