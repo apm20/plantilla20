@@ -43,7 +43,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     <tr align="center" class="active">
         <td width="15%"><strong>Fecha</center></td>
         <td width="15%"><strong>Remitente<strong></dh>
-        <td width="8%"><strong><abbr title="Indica si el mensaje a sido respondido"><i class="fa fa-share"></i><strong></abbr></td>
+        <td width="8%"><strong><abbr title="Indica si el mensaje a sido respondido"><i class="fa fa-share"></i></strong></abbr></td>
         <td width="57%"><strong>Asunto</strong></td>
         <td width="5%"><strong></strong></td>
     </tr>
