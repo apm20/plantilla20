@@ -5,8 +5,7 @@
 <h1><?php echo $title ?></h1>
 Aqu&iacute; puedes escribir nuevos mensajes y ver quien te ha escrito.
 <p></p>
-<button type="button" class="btn btn-default">Tooltip on left</button>
-<p><button class="btn btn-default"  data-toggle="tooltip" data-placement="right" data-original-title="Aquí llegan todos los mensajes que te escriban">
+<p><button class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Aquí llegan todos los mensajes que te escriban">
 		<i class="glyphicon glyphicon-inbox"> </i> <?php echo  anchor("mensajes/entrada/0/0" ,"Buz&oacute;n de entrada ".$estilo_class->PintaPendientes ($pendientes)) ?>
 </button></p>
 				
