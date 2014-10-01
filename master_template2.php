@@ -117,10 +117,11 @@
 
                     <!-- Adsense Lateral Gordo 160x600 recomendacion ini -->
                     <div class="row text-center">
-                    <br/>
+                    
                         <div class="hidden-xs col-lg-12">
 
                             <!-- Adsense Lateral Gordo 160x600 recomendacion inicio -->
+                            <br/>
                             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                             <ins class="adsbygoogle"
                                  style="display:inline-block;width:160px;height:600px;border-style:none;"
