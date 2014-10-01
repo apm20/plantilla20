@@ -5,7 +5,7 @@
 <?php endif; ?>
 <script type="text/javascript" src="http://www.cromosrepes.com/js/adsense.js"></script>
 <div class="row text-center">
-<div class="col-xs-12 col-sm-6 col-lg-6">
+
 
 <fieldset>
 	<form  method="post">
@@ -39,9 +39,8 @@
     </form>
 </fieldset>
 </div>
-<div class="col-xs-12 col-sm-6 col-lg-6 text-center">
+
 <button class="btn btn-default"><b><i class="glyphicon glyphicon-send"> </i> <?php echo anchor('usuario/Registro', 'No tengo cuenta. Quiero registrarme')?></b></button>
 <button class="btn btn-default"><i class="glyphicon glyphicon-question-sign"> </i> <?php echo anchor ('usuario/Pedirerdo mi usuaPassword','No puedo acceder a mi cuenta')?></button>
 
-</div>
-</div>
+
