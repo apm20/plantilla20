@@ -40,7 +40,7 @@ if ($finalizadas== 0) {
         <td><strong>Faltas</strong></td>
         <td><strong>Repes</strong></td>
 <?php if ($finalizadas == 0){ ?>
-        <td><strong>Completado</strong></td>
+        <td class='hidden-xs'><strong>Completado</strong></td>
 <?php } else {?>
         <td><strong>D&iacute;as acabar</strong></td>
 <?php } ?>
@@ -64,7 +64,7 @@ if ($finalizadas== 0) {
     <?php if ($row["t_faltas"]) echo $row["t_faltas"]; ?>
 	</td><td>
     <?php if ($row["t_repes"])  echo $row["t_repes"]  ?>
-	</td><td>
+	</td><td class='hidden-xs'>
     <?php
 	 if ( isset ($row["tiempo"])  && strlen($row["tiempo"])>1 ){
 		 	echo $row["tiempo"];
@@ -113,10 +113,10 @@ if ($finalizadas== 0) {
         <td><strong><?php echo  $tfaltas   ?></strong></td>
         <td><strong><?php echo  $trepes    ?></strong></td>
 <?php if ($finalizadas== 0) {?>
-        <td><strong>
+        <td class='hidden-xs'><strong>
         <?php echo  100-round($tporc/count($colecciones),1)."%" ?></strong></td>
 <?php } else { ?>
-        <td><strong><?ph echo  "Media: ".round($tdias/count($colecciones),0) ?></strong></td>
+        <td class='hidden-xs'><strong><?php echo  "Media: ".round($tdias/count($colecciones),0) ?></strong></td>
 <?php } ?>
         <td></td>
         <td></td>
