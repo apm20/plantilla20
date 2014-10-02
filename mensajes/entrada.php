@@ -105,7 +105,7 @@ function enlaces ( $estado ) {
     echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
 
     if ( $estado == 'S' ) {
-        echo anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
+        echo anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="fa fa-eye-slash"> </i> Ver lista de ignorados</button>',array('class'=>'back'));
     }
     echo ('</div>');
     echo ('</div>');
