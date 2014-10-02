@@ -38,6 +38,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <?php enlaces( $estado ); ?>
 <p></p>
 <center>
+<?php if ( $cuantos == 0) { echo "<p>El buzón está vacío</p>"; } else { ?>
 <table class="table table-bordered table-hover">
 <thead>
     <tr align="center" class="active">
@@ -49,6 +50,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     </tr>
 </thead>
 <tbody>
+
 <?php $url_esc = $this->estilo->EscapaUrl (uri_string());
 	$cuantos = 0;
    foreach ($encabezados as $row): ?>
@@ -74,10 +76,10 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 
 </tbody>
-<?php if ( $cuantos == 0) { echo "<p>El buzón está vacío</p>"; } else { ?>
-<?php } // if ( $cuantos == 0) ?>
+
 </table>
 
+<?php } // if ( $cuantos == 0) ?>
 
 <p></p>
 
