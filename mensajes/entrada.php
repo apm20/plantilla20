@@ -131,12 +131,19 @@ function enlaces ( $estado ) {
     echo '</li>';
     echo '<li ';
     if ( $estado == '1' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="fa fa-trash"> </i> Eliminados',array('class'=>'back'));
+    echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="fa fa-remove"> </i> Eliminados',array('class'=>'back'));
     echo '</li>';
     echo '<li ';
     if ( $estado == 'S' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/S'		,'<i class="fa fa-remove"> </i> No deseado',array('class'=>'back'));
+    echo '>'.anchor('mensajes/entrada/0/S'		,'<i class="fa fa-trash"> </i> No deseado',array('class'=>'back'));
     echo '</li>';
+     if ( $estado == 'E' || $estado == 'F' ) {		+   
+-    	echo '<li ';		
+-    	if (  $estado == 'F' ) 		
+-    		echo 'class="active"';		
+-	echo '>'.anchor('mensajes/entrada/0/F'		,'<i class="fa fa-remove"></i><i class="fa fa-send"></i> Enviados Borrados',array('class'=>'back'));		
+-    	echo '</li>';		
+-    }
     
    
     
