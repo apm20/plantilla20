@@ -101,11 +101,11 @@ function enlaces ( $estado ) {
     echo ('<div class="btn-group-vertical ">');
     echo ('<div class="btn-group">');
 
-    echo anchor  ('mensajes/menu/'				,'<button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> Volver</button>'		,array('class'=>'back')).' ';
-    echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
+    echo anchor  ('mensajes/menu/'				,'<button class="btn btn-default"><i class="fa fa-chevron-left"> </i> Volver</button>'		,array('class'=>'back')).' ';
+    echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="fa fan-plus"> </i> Nuevo mensaje</button>',array('class'=>'back')).' ';
 
     if ( $estado == 'S' ) {
-        echo anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default btn-outline"><i class="fa fa-eye-slash"> </i> Ver lista de ignorados</button>',array('class'=>'back'));
+        echo anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-warning btn-outline"><i class="fa fa-eye-slash"> </i> Ver lista de ignorados</button>',array('class'=>'back'));
     }
     echo ('</div>');
     echo ('</div>');
