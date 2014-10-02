@@ -68,7 +68,7 @@ function enlaces ( $enviados, $usuario, $mensaje, $url_back_esc ) {
 		 switch ($mensaje[0]["estado"]) {
 			 case 0:
 				echo anchor (array ( 'mensajes','MoverMensaje',$mensaje[0]["id"],2,$url_back_esc),
-						'<button class="btn btn-default">Negociando',array('class'=>'back','title'=>'Mover mensaje a la carpeta negociando')).' </button> ';
+						'<button class="btn btn-default">Negociando</button>',array('class'=>'back','title'=>'Mover mensaje a la carpeta negociando'));
 				echo anchor (array ( 'mensajes','MoverMensaje',$mensaje[0]["id"],4,$url_back_esc),
 						'<button class="btn btn-default">Esperando',array('class'=>'back','title'=>'Mover mensaje a la carpeta esperando')).' </button> ';
 
