@@ -114,7 +114,7 @@ function enlaces ( $estado ) {
 
     echo anchor  ('mensajes/menu/'				,'<button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> Volver</button>'		,array('class'=>'back')).' ';
 	echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
-	echo anchor  ('mensajes/enviados/'			,'<button class="btn btn-default"><i class="glyphicon glyphicon-send"> </i> Enviados</button>'		,array('class'=>'back')).' ';
+/*echo anchor  ('mensajes/enviados/'			,'<button class="btn btn-default"><i class="glyphicon glyphicon-send"> </i> Enviados</button>'		,array('class'=>'back')).' ';*/
     
     if ( $estado == 'S' ) {
         echo anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
@@ -145,6 +145,11 @@ function enlaces ( $estado ) {
     if ( $estado == 'S' ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/S'		,'<i class="fa fa-trash"> </i> No deseado',array('class'=>'back'));
     echo '</li>';
+    echo '<li ';
+    if ( $estado == 'E' ) echo 'class="active"';
+    echo '>'.anchor('mensajes/entrada/0/E'		,'<i class="fa fa-send"> </i> Enviados',array('class'=>'back'));
+    echo '</li>';
+    
     echo '</ul>';		
     echo '</div>';
 
