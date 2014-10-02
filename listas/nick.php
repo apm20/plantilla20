@@ -42,7 +42,7 @@ if ($finalizadas== 0) {
 <?php if ($finalizadas == 0){ ?>
         <td class='hidden-xs'><strong>Completado</strong></td>
 <?php } else {?>
-        <td><strong>D&iacute;as acabar</strong></td>
+        <td class='hidden-xs'><strong>D&iacute;as acabar</strong></td>
 <?php } ?>
         <td><strong>Ultima Modif.</strong></td>
         <td><strong>Notas</strong></td>
