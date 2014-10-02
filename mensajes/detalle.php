@@ -33,7 +33,7 @@ var t_ini = new Date();
 			
 		<button class="btn btn-default"> <i class="glyphicon glyphicon-chevron-left"></i> <?php echo $link_back; ?></button>
             
-       <div class="btn-group">
+       
 <?php
 function enlaces ( $enviados, $usuario, $mensaje, $url_back_esc ) {
 
@@ -70,37 +70,36 @@ function enlaces ( $enviados, $usuario, $mensaje, $url_back_esc ) {
 				echo anchor (array ( 'mensajes','MoverMensaje',$mensaje[0]["id"],2,$url_back_esc),
 						'<button class="btn btn-default">Negociando</button>',array('class'=>'back','title'=>'Mover mensaje a la carpeta negociando'));
 				echo anchor (array ( 'mensajes','MoverMensaje',$mensaje[0]["id"],4,$url_back_esc),
-						'<button class="btn btn-default">Esperando',array('class'=>'back','title'=>'Mover mensaje a la carpeta esperando')).' </button> ';
+						'<button class="btn btn-default">Esperando</button>',array('class'=>'back','title'=>'Mover mensaje a la carpeta esperando'));
 
 				break;
 			 case 1:
 				echo anchor (array ( 'mensajes','MoverMensaje',$mensaje[0]["id"],0,$url_back_esc),
-						'<button class="btn btn-default">Mover a Bandeja de Entrada',array('class'=>'back','title'=>'Mover mensaje a la bandeja de entrada')).' </button> ';
+						'<button class="btn btn-default">Mover a Bandeja de Entrada</button>',array('class'=>'back','title'=>'Mover mensaje a la bandeja de entrada'));
 				break;
 			 case 2:
 				echo anchor (array ( 'mensajes','MoverMensaje',$mensaje[0]["id"],4,$url_back_esc),
-						'<button class="btn btn-default">Pasar a Esperando',array('class'=>'back','title'=>'Mover mensaje a la carpeta Esperando')).' </button> ';
+						'<button class="btn btn-default">Pasar a Esperando</button>',array('class'=>'back','title'=>'Mover mensaje a la carpeta Esperando'));
 				break;
 		 }
 	}
 	if ($enviados==false) {
 		echo anchor (array ( 'mensajes','BorrarMensaje',
 					$mensaje[0]["id"],$url_back_esc ),
-			'<button class="btn btn-default">Borrar',array('class'=>'back','title'=>'Mover mensaje a la papelera')). ' </button> ' ;
+			'<button class="btn btn-default">Borrar</button>',array('class'=>'back','title'=>'Mover mensaje a la papelera'));
 	} else {
 		echo anchor (array ( 'mensajes','BorrarMensaje',
 					$mensaje[0]["id"],$url_back_esc ),
-			'<button class="btn btn-default">Borrar',array('class'=>'back')). ' </button> ' ;
+			'<button class="btn btn-default">Borrar</button>',array('class'=>'back'));
 	}
 	if ($enviados==true ||  $mensaje[0]["estado"]!='S') {
 		// Si es un mensaje de Spam no podemos meter al usuario en lista negra
 		echo anchor (array ( 'social','ListaNegraCrear',
 					$usuario->nick ),
-			'<button class="btn btn-default">Ignorar Usuario',array('class'=>'back')). ' </button> ' ;
+			'<button class="btn btn-default">Ignorar Usuario</button>',array('class'=>'back'));
 	}
 
 
 
 }
 ?>
-</div>
