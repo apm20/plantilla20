@@ -36,7 +36,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <?php }?>
 <h1><i class='fa fa-envelope-o'></i> <?php echo $title ?></h1>
 <?php enlaces( $estado ); ?>
-<p></p>
 <center>
 
 <table class="table table-bordered table-hover">
