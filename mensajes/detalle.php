@@ -10,9 +10,9 @@ var t_ini = new Date();
 <center>
 <table class="table table-bordered">
     <tr class="active">
-    	<td width=50%>Mensaje <?php if ($enviados==false) echo "de"; else echo "para"; ?>:  <?php echo $this->estilo->NickSeriedad ($usuario->nick_mostrar, $usuario->total_pos, $usuario->total_neg, $usuario->seriedad,
+    	<td width=50% align="center">Mensaje <?php if ($enviados==false) echo "de"; else echo "para"; ?>:  <?php echo $this->estilo->NickSeriedad ($usuario->nick_mostrar, $usuario->total_pos, $usuario->total_neg, $usuario->seriedad,
 							$usuario->socio, $usuario->ultimo_login,$usuario->velocidad,$usuario->pais_id ) ?></td>
-    	<td width=50%>Enviado el: <?php echo $this->estilo->PintaFechaHora($mensaje[0]["f_alta"]) ?></td>
+    	<td width=50% align="center">Enviado el: <?php echo $this->estilo->PintaFechaHora($mensaje[0]["f_alta"]) ?></td>
     </tr>
      <tr class="active">
     <td colspan="2"><strong>Asunto:</strong> <?php echo $mensaje[0]["asunto"] ?></td>
@@ -31,7 +31,7 @@ var t_ini = new Date();
             <p class="botonera">
 
 			
-		<button class="btn btn-default"> <i class="glyphicon glyphicon-chevron-left"></i> <?php echo $link_back; ?></button>
+		<button class="btn btn-default"> <i class="fa fa-chevron-left"></i> <?php echo $link_back; ?></button>
             
        
 <?php
