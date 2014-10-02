@@ -111,7 +111,7 @@ function enlaces ( $estado ) {
     echo ('</div>');
     echo ('<hr />');
 
-    echo "<div class='row'>";
+   
     echo '<ul class="nav nav-tabs" role="tablist">';
     echo '<li ';
     if ( $estado == '0' ) echo 'class="active"';
@@ -146,8 +146,7 @@ function enlaces ( $estado ) {
     	echo '</li>';
     }
     
-    echo '</ul>';		
-    echo '</div>';
+    echo '</ul>';
 
     
 /*    
