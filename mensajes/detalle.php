@@ -40,12 +40,12 @@ function enlaces ( $enviados, $usuario, $mensaje, $url_back_esc ) {
 	echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"]),	'<button class="btn btn-default">Responder</button>',array('class'=>'back')) ;
 
 	if ($enviados==false) {
-		 echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"],1),'<button class="btn btn-default"> Aceptar Cambio ',array('class'=>'back')).' </button> ' ;
+		 echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"],1),'<button class="btn btn-success btn-outline">Aceptar Cambio</button> ',array('class'=>'back')) ;
 		?>
 		
 		
 		<div class="btn-group">
-		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Rechazar Cambio</button>
+		<button class="btn btn-danger btn-outline dropdown-toggle" data-toggle="dropdown">Rechazar Cambio</button>
 		
 		<ul class="dropdown-menu" role="menu">
     <li><?php echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"],-1),'Sin motivo',array('class'=>'back')).'  ' ; ?></li>
