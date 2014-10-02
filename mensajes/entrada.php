@@ -87,12 +87,12 @@ if ( $cuantos == 0) { echo "<p>El buzón está vacío</p>"; } else { ?>
 
 
        
-<?php   if ( $pagina >0)
-	echo anchor  ('mensajes/entrada/'.(intval($pagina)-1).'/'.$estado,' <button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i>  Anterior</button>',array('class'=>'back'));
-  	echo 'Página '.$pagina+1;
-?>
-
- <?php      if ( $cuantos >20)
+<?php   
+	if ( $pagina >0)
+		echo anchor  ('mensajes/entrada/'.(intval($pagina)-1).'/'.$estado,' <button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i>  Anterior</button>',array('class'=>'back'));
+	if ( $cuantos > 0 )		
+		echo 'Página '.$pagina+1;
+      	if ( $cuantos >20)
 			echo anchor  ('mensajes/entrada/'.(intval($pagina)+1).'/'.$estado,'<button class="btn btn-default">Siguiente <i class="glyphicon glyphicon-chevron-right"> </i></button> ',array('class'=>'back'));
 		
 ?>					
