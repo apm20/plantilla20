@@ -37,10 +37,10 @@ var t_ini = new Date();
 <?php
 function enlaces ( $enviados, $usuario, $mensaje, $url_back_esc ) {
 
-	echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"]),	'<button class="btn btn-default">Responder</button> ',array('class'=>'back')) ;
+	echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"]),	'<button class="btn btn-default">Responder</button>',array('class'=>'back')) ;
 
 	if ($enviados==false) {
-		 echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"],1),'<button class="btn btn-success btn-outline">Aceptar Cambio</button> ',array('class'=>'back')) ;
+	  	 echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"],1),'<button class="btn btn-success btn-outline">Aceptar Cambio</button>',array('class'=>'back')) ;
 		?>
 		
 		
@@ -55,7 +55,7 @@ function enlaces ( $enviados, $usuario, $mensaje, $url_back_esc ) {
     <li><?php echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"],-5),'Descompensado',array('class'=>'back')).'  ' ; ?></li>
     
   </ul>
-  </div>
+  </div> 
   
   
   
