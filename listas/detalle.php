@@ -3,8 +3,7 @@
 <style type="text/css">
 	textarea{resize:none;}
 </style>
-<?php echo anchor('listas/nick/' .$usuario->nick_mostrar, '<button class="btn btn-default"><i class="fa fa-chevron-left"> </i> Volve</button>');?>
-<?php echo $link_back;?>
+<?php echo anchor('listas/nick/' .$usuario->nick_mostrar, '<button class="btn btn-default"><i class="fa fa-chevron-left"> </i> Volver</button>');?>
 <?php echo  enlaces( $visitante,$coleccion, $autor,$usuario->nick_mostrar,$usuario->id  ) ?>
 <br />    
 <p>
