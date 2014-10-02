@@ -39,6 +39,8 @@
     <link href="<?php echo site_url('css/master-template.css')?>" rel="stylesheet">
     <!-- Custom CSS de Alex para hacer los retoques finales-->
     <link href="<?php echo site_url('css/alex.css')?>" rel="stylesheet">
+    
+    <?php echo  $_scripts ?>
 </head>
 
 <body>
