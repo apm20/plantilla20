@@ -39,7 +39,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <center>
 <?php 
 $cuantos = count($encabezados);
-if ( $cuantos == 0) { echo "<p>El buzón está vacío</p>"; } else { ?>
+if ( $cuantos == 0) { echo "<p></p>El buzón está vacío"; } else { ?>
 <table class="table table-bordered table-hover">
 <thead>
     <tr align="center" class="active">
@@ -91,7 +91,8 @@ if ( $cuantos == 0) { echo "<p>El buzón está vacío</p>"; } else { ?>
 	if ( $pagina >0)
 		echo anchor  ('mensajes/entrada/'.(intval($pagina)-1).'/'.$estado,' <button class="btn btn-default"><i class="fa fa-chevron-left"> </i>  Anterior</button>',array('class'=>'back'));
 ?>
-Página <?php echo  $pagina+1 ?>
+<?php if ( $cuantos == 0)
+echo "Página" .$pagina+1; ?>
 <?php
       	if ( $cuantos >20)
 			echo anchor  ('mensajes/entrada/'.(intval($pagina)+1).'/'.$estado,'<button class="btn btn-default">Siguiente <i class="fa fa-chevron-right"> </i></button> ',array('class'=>'back'));
