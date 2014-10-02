@@ -85,14 +85,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <p></p>
 
 
-
-
-
-
-
-	
-       
-       
        
 <?php   if ( $pagina >0)
 			echo anchor  ('mensajes/entrada/'.(intval($pagina)-1).'/'.$estado,' <button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i>  Anterior</button>',array('class'=>'back'));
@@ -104,18 +96,14 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 ?>					
 		
 
-
-  
-
 <?php
 function enlaces ( $estado ) {
     echo ('<div class="btn-group-vertical ">');
     echo ('<div class="btn-group">');
 
     echo anchor  ('mensajes/menu/'				,'<button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> Volver</button>'		,array('class'=>'back')).' ';
-	echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
-/*echo anchor  ('mensajes/enviados/'			,'<button class="btn btn-default"><i class="glyphicon glyphicon-send"> </i> Enviados</button>'		,array('class'=>'back')).' ';*/
-    
+    echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
+
     if ( $estado == 'S' ) {
         echo anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
     }
@@ -139,7 +127,7 @@ function enlaces ( $estado ) {
     echo '</li>';
     echo '<li ';
     if ( $estado == '1' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="fa fa-remove"> </i> Borrados',array('class'=>'back'));
+    echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="fa c"> </i> Borrados',array('class'=>'back'));
     echo '</li>';
     echo '<li ';
     if ( $estado == 'S' ) echo 'class="active"';
@@ -149,6 +137,14 @@ function enlaces ( $estado ) {
     if ( $estado == 'E' ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/E'		,'<i class="fa fa-send"> </i> Enviados',array('class'=>'back'));
     echo '</li>';
+    
+    if ( $estado == 'E' || $estado == 'F' ) {
+    	echo '<li ';
+    	if (  $estado == 'F' ) 
+    		echo 'class="active"';
+	echo '>'.anchor('mensajes/entrada/0/F'		,'<i class="fa fa-send fa-remove"> </i> Enviados Borrados',array('class'=>'back'));
+    	echo '</li>';
+    }
     
     echo '</ul>';		
     echo '</div>';
