@@ -37,7 +37,7 @@ var t_ini = new Date();
 <?php
 function enlaces ( $enviados, $usuario, $mensaje, $url_back_esc ) {
 
-	echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"]),	'<button class="btn btn-default">Responder',array('class'=>'back')).' </button> ' ;
+	echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"]),	'<button class="btn btn-default">Responder</button>',array('class'=>'back')) ;
 
 	if ($enviados==false) {
 		 echo anchor (array ( 'mensajes','Nuevo',$usuario->nick_mostrar,$mensaje[0]["id"],1),'<button class="btn btn-default"> Aceptar Cambio ',array('class'=>'back')).' </button> ' ;
