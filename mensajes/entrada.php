@@ -127,7 +127,7 @@ function enlaces ( $estado ) {
     echo '</li>';
     echo '<li ';
     if ( $estado == '1' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="fa c"> </i> Borrados',array('class'=>'back'));
+    echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="fa fa-remove"> </i> Borrados',array('class'=>'back'));
     echo '</li>';
     echo '<li ';
     if ( $estado == 'S' ) echo 'class="active"';
@@ -142,7 +142,7 @@ function enlaces ( $estado ) {
     	echo '<li ';
     	if (  $estado == 'F' ) 
     		echo 'class="active"';
-	echo '>'.anchor('mensajes/entrada/0/F'		,'<i class="fa fa-send fa-remove"> </i> Enviados Borrados',array('class'=>'back'));
+	echo '>'.anchor('mensajes/entrada/0/F'		,'<i class="fa fa-remove"></i><i class="fa fa-send"></i> Enviados Borrados',array('class'=>'back'));
     	echo '</li>';
     }
     
