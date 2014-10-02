@@ -31,7 +31,7 @@ var t_ini = new Date();
             <p class="botonera">
 
 			
-		<button class="btn btn-default"> <i class="fa fa-chevron-left"></i> <?php echo $link_back; ?></button>
+	<?php	echo anchor  ('mensajes/entrada/','<button class="btn btn-default"><i class="fa fa-chevron-left"> </i> Volver</button>',array('class'=>'back')) ; ?>
             
        
 <?php
