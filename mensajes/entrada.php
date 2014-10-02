@@ -72,14 +72,14 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 		<?php $cuantos ++; ?>
         </td></tr>
     <?php if ( $row["leido"]=='0' ) echo "</strong>" ?>        
-
+<?php endforeach; ?>
 
 
 
 </tbody>
 
 </table>
-<?php endforeach; ?>
+
 <?php if ( $cuantos == 0) { echo "<p>El buzón está vacío</p>"; } else { ?>
 <?php } // if ( $cuantos == 0) ?>
 <p></p>
