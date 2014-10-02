@@ -105,7 +105,7 @@ function enlaces ( $estado ) {
     echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
 
     if ( $estado == 'S' ) {
-        echo anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="glyphicon glyphicon-eye-close"> </i>Ver lista de ignorados</button>',array('class'=>'back'));
+        echo anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default btn-outline"><i class="fa fa-eye-slash"> </i> Ver lista de ignorados</button>',array('class'=>'back'));
     }
     echo ('</div>');
     echo ('</div>');
@@ -119,7 +119,7 @@ function enlaces ( $estado ) {
     echo '</li>';
     echo '<li ';
     if ( $estado == '2' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/2'		,'<i class="fa fa-comments-o glyphicon-transfer"> </i> Negociando',array('class'=>'back'));	
+    echo '>'.anchor('mensajes/entrada/0/2'		,'<i class="fa fa-comments-o"> </i> Negociando',array('class'=>'back'));	
     echo '</li>';
     echo '<li ';
     if ( $estado == '4' ) echo 'class="active"';
