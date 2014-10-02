@@ -126,16 +126,16 @@ function enlaces ( $estado ) {
     echo '>'.anchor('mensajes/entrada/0/4'		,'<i class="fa fa-clock-o"> </i> Esperando',array('class'=>'back'));
     echo '</li>';
     echo '<li ';
+    if ( $estado == 'E' ) echo 'class="active"';
+    echo '>'.anchor('mensajes/entrada/0/E'		,'<i class="fa fa-send"> </i> Enviados',array('class'=>'back'));
+    echo '</li>';
+    echo '<li ';
     if ( $estado == '1' ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/1'		,'<i class="fa fa-remove"> </i> Borrados',array('class'=>'back'));
     echo '</li>';
     echo '<li ';
     if ( $estado == 'S' ) echo 'class="active"';
     echo '>'.anchor('mensajes/entrada/0/S'		,'<i class="fa fa-trash"> </i> No deseado',array('class'=>'back'));
-    echo '</li>';
-    echo '<li ';
-    if ( $estado == 'E' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/E'		,'<i class="fa fa-send"> </i> Enviados',array('class'=>'back'));
     echo '</li>';
     
    
