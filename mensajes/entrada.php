@@ -38,9 +38,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <?php enlaces( $estado ); ?>
 <p></p>
 <center>
-<?php if ( $cuantos == 0) { echo "<p>El buzón está vacío</p>"; } else { ?>
 
-<?php } // if ( $cuantos == 0) ?>
 <table class="table table-bordered table-hover">
 <thead>
     <tr align="center" class="active">
@@ -75,7 +73,9 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
         </td></tr>
     <?php if ( $row["leido"]=='0' ) echo "</strong>" ?>        
 <?php endforeach; ?>
+<?php if ( $cuantos == 0) { echo "<p>El buzón está vacío</p>"; } else { ?>
 
+<?php } // if ( $cuantos == 0) ?>
 
 </tbody>
 
