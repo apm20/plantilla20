@@ -87,11 +87,11 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
        
 <?php   if ( $pagina >0)
-			echo anchor  ('mensajes/entrada/'.(intval($pagina)-1).'/'.$estado,' <button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i>  Anterior</button>',array('class'=>'back'));
+			echo anchor  ('mensajes/entrada/'.(intval($pagina)-1).'/'.$estado,' <button class="btn btn-default"><i class="fa fa-chevron-left"> </i>  Anterior</button>',array('class'=>'back'));
 ?>
   	   Página <?php echo  $pagina+1 ?>
  <?php      if ( $cuantos >20)
-			echo anchor  ('mensajes/entrada/'.(intval($pagina)+1).'/'.$estado,'<button class="btn btn-default">Siguiente <i class="glyphicon glyphicon-chevron-right"> </i></button> ',array('class'=>'back'));
+			echo anchor  ('mensajes/entrada/'.(intval($pagina)+1).'/'.$estado,'<button class="btn btn-default">Siguiente <i class="fa fa-chevron-right"> </i></button> ',array('class'=>'back'));
 		
 ?>					
 		
@@ -101,8 +101,8 @@ function enlaces ( $estado ) {
     echo ('<div class="btn-group-vertical ">');
     echo ('<div class="btn-group">');
 
-    echo anchor  ('mensajes/menu/'				,'<button class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"> </i> Volver</button>'		,array('class'=>'back')).' ';
-    echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="glyphicon glyphicon-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
+    echo anchor  ('mensajes/menu/'				,'<button class="btn btn-default"><i class="fa fa-chevron-left"> </i> Volver</button>'		,array('class'=>'back')).' ';
+    echo anchor  ('seleccion/buscar/mensajes'	,'<button class="btn btn-success"><i class="fa fa-plus"> </i> Escribir mensaje nuevo</button>',array('class'=>'back')).' ';
 
     if ( $estado == 'S' ) {
         echo anchor (array ( 'social','ListaNegra' ),'<button class="btn btn-default"><i class="fa fa-eye-slash"> </i> Ver lista de ignorados</button>',array('class'=>'back'));
@@ -119,7 +119,7 @@ function enlaces ( $estado ) {
     echo '</li>';
     echo '<li ';
     if ( $estado == '2' ) echo 'class="active"';
-    echo '>'.anchor('mensajes/entrada/0/2'		,'<i class="fa fa-comments-o glyphicon-transfer"> </i> Negociando',array('class'=>'back'));	
+    echo '>'.anchor('mensajes/entrada/0/2'		,'<i class="fa fa-comments-o"> </i> Negociando',array('class'=>'back'));	
     echo '</li>';
     echo '<li ';
     if ( $estado == '4' ) echo 'class="active"';
@@ -138,13 +138,7 @@ function enlaces ( $estado ) {
     echo '>'.anchor('mensajes/entrada/0/E'		,'<i class="fa fa-send"> </i> Enviados',array('class'=>'back'));
     echo '</li>';
     
-    if ( $estado == 'E' || $estado == 'F' ) {
-    	echo '<li ';
-    	if (  $estado == 'F' ) 
-    		echo 'class="active"';
-	echo '>'.anchor('mensajes/entrada/0/F'		,'<i class="fa fa-remove"></i><i class="fa fa-send"></i> Enviados Borrados',array('class'=>'back'));
-    	echo '</li>';
-    }
+   
     
     echo '</ul>';		
     echo '</div>';
