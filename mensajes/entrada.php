@@ -37,7 +37,9 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <h1><i class='fa fa-envelope-o'></i> <?php echo $title ?></h1>
 <?php enlaces( $estado ); ?>
 <center>
-<?php if ( $cuantos == 0) { echo "<p>El buzón está vacío</p>"; } else { ?>
+<?php 
+$cuantos = count(encabezados);
+if ( $cuantos == 0) { echo "<p>El buzón está vacío</p>"; } else { ?>
 <table class="table table-bordered table-hover">
 <thead>
     <tr align="center" class="active">
