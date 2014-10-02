@@ -68,14 +68,14 @@ function enlaces ( $enviados, $usuario, $mensaje, $url_back_esc ) {
 		 switch ($mensaje[0]["estado"]) {
 			 case 0:
 				echo anchor (array ( 'mensajes','MoverMensaje',$mensaje[0]["id"],2,$url_back_esc),
-						'<button class="btn btn-default">Negociando</button> ',array('class'=>'back','title'=>'Mover mensaje a la carpeta negociando'));
+						'<button class="btn btn-default">Mover a negociando</button> ',array('class'=>'back','title'=>'Mover mensaje a la carpeta negociando'));
 				echo anchor (array ( 'mensajes','MoverMensaje',$mensaje[0]["id"],4,$url_back_esc),
-						'<button class="btn btn-default">Esperando</button> ',array('class'=>'back','title'=>'Mover mensaje a la carpeta esperando'));
+						'<button class="btn btn-default">Mover a esperando</button> ',array('class'=>'back','title'=>'Mover mensaje a la carpeta esperando'));
 
 				break;
 			 case 1:
 				echo anchor (array ( 'mensajes','MoverMensaje',$mensaje[0]["id"],0,$url_back_esc),
-						'<button class="btn btn-default">Mover a Bandeja de Entrada</button> ',array('class'=>'back','title'=>'Mover mensaje a la bandeja de entrada'));
+						'<button class="btn btn-default">Mover al buzón de entrada</button> ',array('class'=>'back','title'=>'Mover mensaje a la bandeja de entrada'));
 				break;
 			 case 2:
 				echo anchor (array ( 'mensajes','MoverMensaje',$mensaje[0]["id"],4,$url_back_esc),
