@@ -1,9 +1,9 @@
 <h1>
 <?php
 if ($finalizadas== 0) {
-	echo "<i class='fa fa_tasks'></i>Colecciones activas de ".$title;
+	echo "<i class='fa fa-tasks'></i> Colecciones activas de ".$title;
 } else {
-	echo "<i class='fa fa-flag-checkered'></i>Colecciones finalizadas de ".$title;
+	echo "<i class='fa fa-flag-checkered'></i> Colecciones finalizadas de ".$title;
 }
 ?>
 </h1>
@@ -26,7 +26,7 @@ if ($finalizadas== 0) {
 } else {
 ?>
 <ul class="nav nav-tabs" role="tablist">
-  <li <?php if ($finalizadas== 0) echo 'class="active"'?>> <?php echo anchor("listas/nick/".$usuario->nick_mostrar," <i class='fa fa-flag-tasks'></i> Colecciones activas") ?> </li>
+  <li <?php if ($finalizadas== 0) echo 'class="active"'?>> <?php echo anchor("listas/nick/".$usuario->nick_mostrar," <i class='fa fa-tasks'></i> Colecciones activas") ?> </li>
    
   <li <?php if ($finalizadas== 1) echo 'class="active"'?>> <?php echo anchor("listas/finalizadas/".$usuario->nick_mostrar," <i class='fa fa-flag-checkered'></i> Colecciones finalizadas") ?> </li>
 
