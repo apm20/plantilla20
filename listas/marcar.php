@@ -7,7 +7,7 @@ foreach ( $javascript as $fic_js ) { ?>
 */
 	function PintaCelda( $nombre, $cuantos, $marca, $pos )
 	{
-		?><td><input class='c<?php echo $marca?>' style="width:1.5em" maxlength="2" name='cr[]' value='<?php echo $cuantos?>'
+		?><td><input class='form-control c<?php echo $marca?>' style="width:1.5em" maxlength="2" name='cr[]' value='<?php echo $cuantos?>'
    onmousedown='return dont(event)' onmouseup='return buttonalert(event,this)'
    onclick='return dont(event)' ondblclick='return dont(event)'
    oncontextmenu='return dont(event)'>
